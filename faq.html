@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rehlte - Travel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+    <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/responsive-en.css'>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+            <img src="image/loader.svg" alt="">
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="mob-menu-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="image/logo.svg" class="header-logo" alt="logo">
+                            </a>
+                        </div>
+                        <div class="side-menu-mobile">
+                            <div class="menu-button__wrapper">
+                                <div class="menu-button">
+                                  <span class="menu-button__bar"></span>
+                                  <span class="menu-button__bar"></span>
+                                  <span class="menu-button__bar"></span>
+                                </div>
+                              </div>
+                              <div class="menu-overlay">
+                                <nav class="nav">
+                                  <a class="nav__item" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-ticket"></i>Bookings</a>
+                                </nav>
+                                <nav class="nav">
+                                  <a class="nav__item" href="index.html"><i class="fa-solid fa-plane"></i>Flights</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+                                </nav>
+                                <nav class="nav">
+                                  <a class="nav__item" href="index.html"><i class="fa-solid fa-language"></i>Change languge</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-dollar-sign"></i>Currency</a>
+                                  <a class="nav__item" href="#v-pills-messages"><img src="image/my-profile/faq.svg" alt="">FAQ</a>
+                                  <a class="nav__item" href="#v-pills-privacy"><img src="image/my-profile/privacy-policy.svg" alt="">Privacy Policy</a>
+                                  <a class="nav__item" href="#v-pills-condition"><img src="image/my-profile/terms-condition.svg" alt="">Terms & Conditions</a>
+                                  <a class="nav__item" href="#v-pills-settings"><img src="image/my-profile/about-us.svg" alt="">About Us</a>
+                                </nav>
+                              </div>
+                              <div class="background-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="side-menu-opts">
+                        <!-- <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="image/flight.svg" width="25" height="25" alt="flight-menu">
+                                        flight</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/hotel.svg" width="25" height="25"
+                                            alt="hotel-menu">hotels</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="user-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank"><img src="image/wp.svg" width="30" height="30"
+                                            alt="">920022222</a>
+                                </li>
+                                <li>
+                                    <select id="selectbox1">
+                                        <option value="">SAR</option>
+                                        <option value="aye">INR</option>
+                                        <option value="eh">USD</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/wallet.svg" width="20" height="20" alt="">my points</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#"><img src="image/user.svg" width="20" height="20" alt="">Abdelsalam</a>
+                                </li> -->
+                                <li>
+                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"><img src="image/user.svg" width="20" height="20" alt="">Sign In</a>
+                                </li>
+                                <li class="me-0">
+                                    <div class="switches-container">
+                                        <input type="radio" id="ar" name="lang" value="ar" />
+                                        <input type="radio" id="en" name="lang" value="en" checked="checked" />
+                                        <label for="ar" class="arabic-txt">ع</label>
+                                        <label for="en">En</label>
+                                        <div class="switch-wrapper">
+                                            <div class="switch">
+                                                <div class="arabic-txt">ع</div>
+                                                <div>En</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-profile-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="bredcrumbs-opts">
+                        <ul>
+                            <li>
+                              <a href="index.html">
+                                Home
+                                <i class="fa-solid fa-chevron-right"></i>
+                              </a>
+                            </li>
+                            <li class="active">
+                                FAQ's
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="profile-main-content tab-content" id="v-pills-tabContent">
+                        <div class="profile-tab-title">
+                          <i class="fa-regular fa-circle-question"></i><h4>FAQ's</h4>
+                        </div>
+                        <div class="faqs-list">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Frequently asked questions Frequently asked questions
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Frequently asked questions Frequently asked questions
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                                        Frequently asked questions Frequently asked questions
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                                        Frequently asked questions Frequently asked questions
+                                    </button>
+                                  </h2>
+                                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center down-text">
+                        <div class="download-txt">
+                            <h5>Download Now !</h5>
+                            <h2>Rehlte Application</h2>
+                            <p>Enjoy the best exclusive offers and collect rehlte travel points
+                                to get more discount...</p>
+                        </div>
+                        <div class="qr-download d-flex align-items-center">
+                            <img src="image/qrcode.png" alt="">
+                            <div class="scan-txt ms-3">
+                                <p>Scan this QR code for</p>
+                                <span>Download The App</span>
+                            </div>
+                        </div>
+                        <div class="marketplace-download mt-3">
+                            <ul class="ps-0 d-flex align-items-center">
+                                <li>
+                                    <a href="#">
+                                        <img src="image/playstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appgallary.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="download-app-img">
+                        <img class="w-full ltr-dir-img" src="image/download-rehlte.png" alt="">
+                        <img class="w-full rtl-dir-img" src="image/download-rehlte-rtl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>About Rehlte</h5>
+                        <p>about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty</p>
+                        <a href="#" class="read-more-btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-xs-12">
+                    <div class="footer-cont footer-links">
+                        <h5>Quick links</h5>
+                        <div class="bottom-site-urls">
+                            <ul>
+                                <li>
+                                    <a href="#">Spcial Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Summer Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Bridal Shows
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Explore Destinations
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="terms-condition.html">Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont social-links">
+                        <h5>Follow us on</h5>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="image/social/snapchat.svg" alt="">Snapchat</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/twitter.svg" alt="">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/google.svg" alt="">Google</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/facebook.svg" alt="">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>Instagram</h5>
+                        <div class="insta-posts">
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights-footer">
+        <p>Copyright © 2023 .All rights reserved by <a href="#">Rehlte</a>. Designed by <a
+                href="https://www.amarinfotech.com/" target="_blank">Amar Infotech</a></p>
+    </div>
+
+    <div class="go-top"></div>
+
+    <!-- Login & create account popup -->
+    <!-- Modal -->
+    <!-- login popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Sign in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Continue with</h5>
+                <div class="login-tabs">
+                    <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <a
+                            class="nav-link active"
+                            id="ex1-tab-1-login"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-1-login"
+                            role="tab"
+                            aria-controls="ex1-tabs-1-login"
+                            aria-selected="true"
+                            >Mobile number</a
+                        >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <a
+                            class="nav-link"
+                            id="ex1-tab-2-login"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-2-login"
+                            role="tab"
+                            aria-controls="ex1-tabs-2-login"
+                            aria-selected="false"
+                            >E-mail</a
+                        >
+                        </li>
+                    </ul>
+                    <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-login">
+                        <div
+                        class="tab-pane fade show active"
+                        id="ex1-tabs-1-login"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1-login"
+                        >
+                        <form action="">
+                            <div class="form-floating">
+                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile number *" name="number" required>
+                            </div>
+                            <div class="form-floating mt-2">
+                                <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                <label for="floatingPassword">Password</label>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" onclick="password_show_hide();">
+                                    <i class="fas fa-eye show_eye"></i>
+                                    <i class="fas fa-eye-slash d-none hide_eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="sign-in-btn">
+                                <button>Sign in</button>
+                            </div>
+                        </form>
+                        <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot your password ?</a>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2-login" role="tabpanel" aria-labelledby="ex1-tab-2-login">
+                            <form action="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address *</label>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                        <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                        <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="sign-in-btn">
+                                    <button>Sign in</button>
+                                </div>
+                            </form>
+                            <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot your password ?</a>
+                        </div>
+                        <div class="other-login-opts">
+                            <span>OR</span>
+                        </div>
+                        <div class="social-media-logins mb-4">
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/apple-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/google-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/twitter.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/instagram.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/facebook.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>Don't have account? <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Create a new account</a></span>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- singup popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle2" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Create New Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Continue with</h5>
+                <div class="login-tabs">
+                    <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link active"
+                            id="ex1-tab-1-register"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-1-register"
+                            role="tab"
+                            aria-controls="ex1-tabs-1-register"
+                            aria-selected="true"
+                            >Mobile number</a
+                            >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link"
+                            id="ex1-tab-2-register"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-2-register"
+                            role="tab"
+                            aria-controls="ex1-tabs-2-register"
+                            aria-selected="false"
+                            >E-mail</a
+                            >
+                        </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-register">
+                        <div
+                            class="tab-pane fade show active"
+                            id="ex1-tabs-1-register"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1-register"
+                        >
+                        <form action="">
+                            <div class="form-floating">
+                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile number *" name="number" required>
+                            </div>
+                            <div class="form-floating mt-2">
+                                <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                <label for="floatingPassword">Password</label>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" onclick="password_show_hide();">
+                                        <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                        <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                    </span>
+                                    </div>
+                            </div>
+                            <p class="create-account-note">The password must be composed of letters or numbers, in Latin letters so that it includes uppercase and lowercase letters</p>
+                            <div class="sign-in-btn">
+                                <button class="mt-0">Create Account</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2-register" role="tabpanel" aria-labelledby="ex1-tab-2-register">
+                            <form action="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address *</label>
+                                    </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                        </div>
+                                </div>
+                                <p class="create-account-note">The password must be composed of letters or numbers, in Latin letters so that it includes uppercase and lowercase letters</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0">Create Account</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="other-login-opts mt-5">
+                            <span>OR</span>
+                        </div>
+                        <div class="social-media-logins mb-4">
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/apple-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/google-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/twitter.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/instagram.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/facebook.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>Have Account ? <a  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- forgot pass popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle3" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Forgot Password</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Reset Password using</h5>
+                <div class="login-tabs forgot-pass-filds">
+                    <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link active"
+                            id="ex1-tab-1-forgot"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-1-forgot"
+                            role="tab"
+                            aria-controls="ex1-tabs-1-forgot"
+                            aria-selected="true"
+                            >Mobile number</a
+                            >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link"
+                            id="ex1-tab-2-forgot"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-2-forgot"
+                            role="tab"
+                            aria-controls="ex1-tabs-2-forgot"
+                            aria-selected="false"
+                            >E-mail</a
+                            >
+                        </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-forgot">
+                        <div
+                            class="tab-pane fade show active"
+                            id="ex1-tabs-1-forgot"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1-forgot"
+                        >
+                        <form class="mb-3" action="">
+                            <div class="form-floating">
+                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile number *" name="number" required>
+                            </div>
+                            <p class="create-account-note">Please enter the mobile number that was
+                                used to create your Rehlaty account</p>
+                            <div class="sign-in-btn">
+                                <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2-forgot" role="tabpanel" aria-labelledby="ex1-tab-2-forgot">
+                            <form class="mb-3" action="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address *</label>
+                                    </div>
+                                <p class="create-account-note">Please enter the email-id that was
+                                    used to create your Rehlaty account</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                        <span>Remember Password ? <a  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- otp-sent -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle4" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="successfully-sent-otp">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yqzmiobz.json"
+                            trigger="loop"
+                            delay="500"
+                            colors="primary:#44d97f"
+                            style="width:150px;height:150px">
+                        </lord-icon>
+                        <!-- <img src="image/right-tick.gif" width="150" height="150" alt=""> -->
+                        <h4>The activation code has been sent
+                            to the Mobile Number</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- enter otp popup-->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle5" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">Enter OTP</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-tabs forgot-pass-filds">
+                            <form class="mb-3" action="">
+                                <div class="form-floating otp-inputs mb-4 mt-4">
+                                    <input id="otp-first" type="number" min="0" max="9" step="1" aria-label="first digit" />
+                                    <input id="otp-second" type="number" min="0" max="9" step="1" aria-label="second digit" />
+                                    <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="third digit" />
+                                    <input id="otp-fourth" type="number" min="0" max="9" step="1" aria-label="fourth digit" />
+                                    <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="five digit" />
+                                    <input id="otp-fourth" type="number" min="0" max="9" step="1" aria-label="six digit" />
+                                </div>
+                                <p class="create-account-note">Please enter the OTP we have shared on <br> <b>+91 12345667890</b></p>
+                            </form>
+                            <div class="sign-in-btn">
+                                <button data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- set new password -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle6" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Set New Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-tabs forgot-pass-filds">
+                        <div class="set-new-pass">
+                            <form action="">
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">New Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                        </div>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Confirm Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                        </div>
+                                </div>
+                                <p class="create-account-note mt-3">The password must be composed of letters or numbers, in Latin letters so that it includes uppercase and lowercase letters</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src='js/main.js'></script>
+    <div class="top-right">
+        <div class="top-right-content">
+            <div class="left-side">
+                <h4>Download Our App To Get <br> More Feature !</h4>
+            </div>
+            <div class="center-side">
+                <button>Download Now</button>
+            </div>
+            <div class="right-side">
+                <button  id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+        </div>
+    </div>
+    <script>
+          $(document).ready(function(){
+            $("div").click(function(){
+             $(".top-right").fadeOut(200);
+                });
+            });
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <ellipse cx="50" cy="52.5" rx="43" ry="41.5"/>
+  <ellipse class="cls-1" cx="50.5" cy="49.5" rx="46.5" ry="47.5"/>
+  <image id="left-arrow-5-128" x="37" y="31" width="20" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAjCAYAAACU9ioYAAAAfElEQVRIie3WOwqAQAxF0Vu5NRtnZa7GT+GWrFS0EQUlMIKFIs4ERMiDkCqHkCpEJgEKoPc9ieFkuAK2U9WamNSiic2A08Qywwwz7DNMUl5gXSgmWS/APBSTDNobOn8vtRviBw011NDfoq9/myd0DAXv0CkGPNDWf7ANkO6xg88ei0cuhwAAAABJRU5ErkJggg=="/>
+</svg>

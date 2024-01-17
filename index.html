@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rehlte - Travel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+        <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/style.css'>
+        <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/responsive-en.css'>
+        <!-- NEW CSS LINK -->
+        <!-- <link rel="stylesheet" href="css/hotel-re.css"> -->
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+            <img src="image/loader.svg" alt="">
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="mob-menu-content">
+                        <div class="logo">
+                            <img src="image/logo.svg" class="header-logo" alt="logo">
+                        </div>
+                        <div class="side-menu-mobile">
+                            <div class="menu-button__wrapper">
+                                <div class="menu-button">
+                                  <span class="menu-button__bar"></span>
+                                  <span class="menu-button__bar"></span>
+                                  <span class="menu-button__bar"></span>
+                                </div>
+                              </div>
+                              <div class="menu-overlay">
+                                <nav class="nav">
+                                  <a class="nav__item" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-ticket"></i>Bookings</a>
+                                </nav>
+                                <nav class="nav">
+                                  <a class="nav__item" href="index.html"><i class="fa-solid fa-plane"></i>Flights</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+                                </nav>
+                                <nav class="nav">
+                                  <a class="nav__item" href="index.html"><i class="fa-solid fa-language"></i>Change languge</a>
+                                  <a class="nav__item" href="#"><i class="fa-solid fa-dollar-sign"></i>Currency</a>
+                                  <a class="nav__item" href="#v-pills-messages"><img src="image/my-profile/faq.svg" alt="">FAQ</a>
+                                  <a class="nav__item" href="#v-pills-privacy"><img src="image/my-profile/privacy-policy.svg" alt="">Privacy Policy</a>
+                                  <a class="nav__item" href="#v-pills-condition"><img src="image/my-profile/terms-condition.svg" alt="">Terms & Conditions</a>
+                                  <a class="nav__item" href="#v-pills-settings"><img src="image/my-profile/about-us.svg" alt="">About Us</a>
+                                </nav>
+                              </div>
+                              <div class="background-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="side-menu-opts">
+                        <!-- <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="image/flight.svg" width="25" height="25" alt="flight-menu">
+                                        flight</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/hotel.svg" width="25" height="25"
+                                            alt="hotel-menu">hotels</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="user-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank"><img src="image/wp.svg" width="30" height="30"
+                                            alt="">920022222</a>
+                                </li>
+                                <li>
+                                    <select id="selectbox1">
+                                        <option value="">SAR</option>
+                                        <option value="aye">INR</option>
+                                        <option value="eh">USD</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/wallet.svg" width="20" height="20" alt="">my points</a>
+                                </li>
+                                <li>
+                                    <a href="my-profile.html"><img src="image/user.svg" width="20" height="20" alt="">Abdelsalam</a>
+                                </li>
+                                <!-- <li>
+                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"><img src="image/user.svg" width="20" height="20" alt="">Sign In</a>
+                                </li> -->
+                                <li class="me-0">
+                                    <div class="switches-container">
+                                        <input type="radio" id="ar" name="lang" value="ar" />
+                                        <input type="radio" id="en" name="lang" value="en" checked="checked" />
+                                        <label for="ar" class="arabic-txt">ع</label>
+                                        <label for="en">En</label>
+                                        <div class="switch-wrapper">
+                                            <div class="switch">
+                                                <div class="arabic-txt">ع</div>
+                                                <div>En</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-banner">
+            <!-- <div class="banner-title">
+                <h1>Have fun.. on the trip</h1>
+            </div> -->
+            <div class="swiper myBannerSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="image/banner-bg.svg" alt="">
+                    <div class="banner-title">
+                        <h1>Have fun.. on the trip</h1>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="image/banner-bg.svg" alt="">
+                    <div class="banner-title">
+                        <h1>Have fun.. on the trip</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+    </div>
+
+    <div class="search-form">
+        <div class="container">
+            <div class="flight-hotels-search-tabs">
+                <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="ex1-tab-1" data-bs-toggle="tab" href="#ex1-tabs-1" role="tab"
+                            aria-controls="ex1-tabs-1" aria-selected="true">
+                            <div class="search-ico-bx">
+                                <img src="image/search/flight-search.svg" alt="">
+                            </div>
+                            <span>Flight</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="ex1-tab-2" data-bs-toggle="tab" href="#ex1-tabs-2" role="tab"
+                            aria-controls="ex1-tabs-2" aria-selected="false">
+                            <div class="search-ico-bx">
+                                <img src="image/search/hotel-search.svg" alt="">
+                            </div><span>Hotels</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="ex1-content">
+                    <div class="tab-pane fade show active" id="ex1-tabs-1" role="tabpanel" aria-labelledby="ex1-tab-1">
+                        <div class="inner-tabs-cont">
+                          <ul class="nav nav-tabs inner-flight-search align-items-center" id="ex2" role="tablist">
+                            <li class="nav-item" role="presentation1">
+                              <a
+                                class="nav-link active"
+                                id="ex2-tab-1"
+                                data-bs-toggle="tab"
+                                href="#ex2-tabs-1"
+                                role="tab"
+                                aria-controls="ex2-tabs-1"
+                                aria-selected="true"
+                                >One way</a
+                              >
+                            </li>
+                            <li class="nav-item" role="presentation1">
+                              <a
+                                class="nav-link"
+                                id="ex2-tab-2"
+                                data-bs-toggle="tab"
+                                href="#ex2-tabs-2"
+                                role="tab"
+                                aria-controls="ex2-tabs-2"
+                                aria-selected="false"
+                                >round trip</a
+                              >
+                            </li>
+                            <li class="nav-item" role="presentation1">
+                              <a
+                                class="nav-link"
+                                id="ex2-tab-3"
+                                data-bs-toggle="tab"
+                                href="#ex2-tabs-3"
+                                role="tab"
+                                aria-controls="ex2-tabs-3"
+                                aria-selected="false"
+                                >multi city</a
+                                >
+                            </li>
+                          </ul>
+                            <div class="flights-direct-opts">
+                                <span class="me-4">
+                                    <input id="cbx1" type="checkbox" class="cbx" checked />
+                                    <label for="cbx1" class="lbl">Direct flights only</label>
+                                </span>
+                                <span>
+                                    <input id="cbx2" type="checkbox" class="cbx" />
+                                    <label for="cbx2" class="lbl">Including travel baggage</label>
+                                </span>
+                            </div>
+                            </div>
+                          <div class="tab-content" id="ex2-content">
+                            <div
+                              class="tab-pane fade show active"
+                              id="ex2-tabs-1"
+                              role="tabpanel"
+                              aria-labelledby="ex1-tab-1"
+                            >
+                              <div class="one-way-flight-search">
+                                <form action="">
+                                    <div class="from-to-city">
+                                        <div class="from-city-name form-input">
+                                            <input type="text" placeholder="Choose a travel destination" value="Ahmedabad, India">
+                                            <label for="">From</label>
+                                        </div>
+                                        <div class="switch-city-opt">
+                                            <img src="image/search/city-switch.svg" alt="">
+                                        </div>
+                                        <div class="to-city-name form-input">
+                                            <input type="text" placeholder="Choose destination" value="Singapore - Singapore">
+                                            <label for="">To</label>
+                                        </div>
+                                    </div>
+                                    <div class="departure-date">
+                                        <input type="text" id="datepicker" class="datepicker" autocomplete="off" placeholder="Departure Date">
+                                        <label for="datepicker"><img src="image/search/calender.svg" alt=""></label>
+                                    </div>
+                                    <div class="travellers-info">
+                                            <div class="input-group w-auto align-items-center mb-1">
+                                                <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                <input type="number" step="1" max="10" placeholder="Adult (12+)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                             </div>
+                                            <div class="input-group w-auto align-items-center">
+                                                <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                <input type="number" step="1" max="10" placeholder="Infant (2-)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                             </div>
+                                    </div>
+                                    <div class="travellers-info">
+                                        <div class="input-group w-auto align-items-center mb-1">
+                                            <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                            <input type="number" step="1" max="10" placeholder="Child (2-12)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                            <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                         </div>
+                                         <select id="selectbox2" class="class-selection">
+                                            <option value="">Economy</option>
+                                            <option value="aye">First class</option>
+                                            <option value="eh">Business Class</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-btn oneway-flight-search ">
+                                        <a id="searchButton-oneway" ><img src="image/search/search-ico.svg" alt="">Search</a></a>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
+                              <div class="one-way-flight-search round-trip-search">
+                                <form action="">
+                                    <div class="from-to-city">
+                                        <div class="from-city-name form-input">
+                                            <input type="text" value="Ahmedabad, India" placeholder="Choose a travel destination">
+                                            <label for="">From</label>
+                                        </div>
+                                        <div class="switch-city-opt">
+                                            <img src="image/search/city-switch.svg" alt="">
+                                        </div>
+                                        <div class="to-city-name form-input">
+                                            <input type="text" value="Singapore - Singapore" placeholder="Choose destination">
+                                            <label for="">To</label>
+                                        </div>
+                                    </div>
+                                    <div class="departure-date">
+                                      <div class="depart-date position-relative mb-1">
+                                        <input type="text" name="start-date" class="datepicker" id="start-date1" placeholder="Departure Date" />
+                                        <label for="start-date1"><img src="image/search/calender.svg" alt=""></label>
+                                      </div>
+                                      <div class="depart-date position-relative">
+                                        <input type="text" name="end-date" class="return-date-visible" id="end-date2" placeholder="Return Date" />
+                                        <label for="end-date2"><img src="image/search/calender.svg" alt=""></label>
+                                      </div>
+                                    </div>
+                                    <div class="travellers-info">
+                                            <div class="input-group w-auto align-items-center mb-1">
+                                                <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                <input type="number" step="1" max="10" placeholder="Adult (12+)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                             </div>
+                                            <div class="input-group w-auto align-items-center">
+                                                <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                <input type="number" step="1" max="10" placeholder="Infant (2-)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                             </div>
+                                    </div>
+                                    <div class="travellers-info">
+                                        <div class="input-group w-auto align-items-center mb-1">
+                                            <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                            <input type="number" step="1" max="10" placeholder="Child (2-12)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                            <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                         </div>
+                                         <select id="selectbox2" class="class-selection">
+                                            <option value="">Economy</option>
+                                            <option value="aye">First class</option>
+                                            <option value="eh">Business Class</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-btn roundtrip-flight-search">
+                                        <a id="searchButton-round-trip" ><img src="image/search/search-ico.svg" alt="">Search</a>
+                                    </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex2-tab-3">
+                              <div class="one-way-flight-search multi-city-search">
+                                <form action="">
+                                    <div class="from-to-city">
+                                        <div class="from-city-name form-input">
+                                            <input type="text" value="Ahmedabad, India" placeholder="Choose a travel destination">
+                                            <label for="">From</label>
+                                        </div>
+                                        <div class="switch-city-opt">
+                                            <img src="image/search/city-switch.svg" alt="">
+                                        </div>
+                                        <div class="to-city-name form-input">
+                                            <input type="text" value="Singapore - Singapore" placeholder="Choose destination">
+                                            <label for="">To</label>
+                                        </div>
+                                    </div>
+                                    <div class="departure-date">
+                                        <input type="text" id="datepicker2" class="datepicker" autocomplete="off" placeholder="Departure Date">
+                                        <label for="datepicker2"><img src="image/search/calender.svg" alt=""></label>
+                                    </div>
+                                    <div class="travellers-info">
+                                            <div class="input-group w-auto align-items-center mb-1">
+                                                <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                <input type="number" step="1" max="10" placeholder="Adult (12+)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                             </div>
+                                            <div class="input-group w-auto align-items-center">
+                                                <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                <input type="number" step="1" max="10" placeholder="Infant (2-)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                             </div>
+                                    </div>
+                                    <div class="travellers-info">
+                                        <div class="input-group w-auto align-items-center mb-1">
+                                            <input type="button" value="-" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">
+                                            <input type="number" step="1" max="10" placeholder="Child (2-12)" name="quantity" class="quantity-field border-0 text-center w-25">
+                                            <input type="button" value="+" class="button-plus border icon-shape icon-sm " data-field="quantity">
+                                         </div>
+                                         <select id="selectbox2" class="class-selection">
+                                            <option value="">Economy</option>
+                                            <option value="aye">First class</option>
+                                            <option value="eh">Business Class</option>
+                                        </select>
+                                    </div>
+                                    <div class="search-btn multiple-flight-search">
+                                        <a id="searchButton-multicity"><img src="image/search/search-ico.svg" alt="">Search</a>
+                                    </div>
+                                </form>
+                                <div class="single-city-data element" id="div_1">
+                                   <h4>Flight 2</h4>
+                                    <form action="">
+                                        <div class="from-to-city">
+                                            <div class="from-city-name form-input">
+                                                <input type="text" placeholder="Choose a travel destination">
+                                                <label for="">From</label>
+                                            </div>
+                                            <div class="switch-city-opt">
+                                                <img src="image/search/city-switch.svg" alt="">
+                                            </div>
+                                            <div class="to-city-name form-input">
+                                                <input type="text" placeholder="Choose destination">
+                                                <label for="">To</label>
+                                            </div>
+                                        </div>
+                                        <div class="departure-date">
+                                            <input type="text" id="datepicker1" class="datepicker" autocomplete="off" placeholder="Departure Date">
+                                            <label for="datepicker1"><img src="image/search/calender.svg" alt=""></label>
+                                        </div>
+                                        <div class="add-new-flight-opt add">
+                                            <img src="image/search/add.svg" alt="">
+                                            Add another flight
+                                        </div>
+                                    </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+                        <div class="hotels-search-fileds">
+                            <div class="one-way-flight-search round-trip-search">
+                                <form action="">
+                                    <div class="from-to-city hotel-location-input">
+                                        <div class="from-city-name form-input">
+                                            <input type="text"  placeholder="Enter the hotel name, or choose the city">
+                                            <label for=""><i class="fa-solid fa-location-dot"></i></label>
+                                        </div>
+                                    </div>
+                                    <div class="departure-date">
+                                        <div class="depart-date position-relative mb-1">
+                                            <input type="text" name="start-date" id="new-start-date" placeholder="Check In Date" />
+                                            <label for="new-start-date"><img src="image/search/calender.svg" alt=""></label>
+                                        </div>
+                                        <div class="depart-date position-relative">
+                                            <input type="text" name="end-date" id="new-end-date" placeholder="Check out Date" />
+                                            <label for="new-end-date"><img src="image/search/calender.svg" alt=""></label>
+                                        </div>
+                                    </div>
+                                    <div class="travellers-info hotel-class-select">
+                                         <select id="selectbox2" class="class-selection">
+                                            <option value="">Super Delux</option>
+                                            <option value="aye">Delux</option>
+                                            <option value="eh">Premium</option>
+                                        </select>
+                                        <select id="selectbox2" class="class-selection">
+                                            <option value="">Bed Only</option>
+                                            <option value="aye">Bed and Breakfast</option>
+                                            <option value="eh">Breakfast + Lunch</option>
+                                            <option value="eh2">Breakfast + Lunch + Dinner</option>
+                                            <option value="eh2">Lunch + Dinner</option>
+                                            <option value="eh3">All Inclusive</option>
+                                        </select>
+                                    </div>
+                                    <div class="travellers-info hotel-class-select form-input">
+                                        <input type="text" autocomplete="off" readonly value="1 Room | 2 Travelers" class="expander w-100 main-travlers-list-visible">
+                                        <label for=""><i class="fa-solid fa-user"></i></label>
+                                            <div class="travellers-info-drop" id="TableData">
+                                                <div id="rooms-container">
+                                                    <div class="traveller-rooms">
+                                                        <h5>Room 1 <span class="remove-rooms" style="display:none;"><i class="fa-solid fa-trash"></i>Delete</span></h5>
+                                                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                            2 Travelers
+                                                            <i class="fa-solid fa-chevron-down"></i>
+                                                        </a>
+                                                        <div class="collapse" id="collapseExample">
+                                                            <div class="card card-body">
+                                                                <span class="travel-titl-spans">
+                                                                    Adult (13+)
+                                                                    <div class="counters-hotel-travellrs">
+                                                                        <div class="input-group w-auto align-items-center">
+                                                                            <button type="button" class="button-minus border icon-shape icon-sm mx-1">-</button>
+                                                                            <input type="number" step="1" min="1" max="10" placeholder="Adult (12+)" value="2" name="quantity" class="quantity-field border-0 text-center w-25" disabled>
+                                                                            <button type="button" class="button-plus border icon-shape icon-sm">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <span class="travel-titl-spans">
+                                                                    Child (2-12)
+                                                                    <div class="counters-hotel-travellrs">
+                                                                        <div class="input-group w-auto align-items-center mb-1">
+                                                                            <button type="button" class="custom-button-minus border icon-shape icon-sm mx-1" data-field="quantity">-</button>
+                                                                            <input type="number" step="1" max="6" placeholder="Child (2-12)" value="0" name="quantity" class="custom-quantity-field border-0 text-center w-25" disabled>
+                                                                            <button type="button" class="custom-button-plus border icon-shape icon-sm" data-field="quantity">+</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </span>
+                                                                <div class="child-age-opts" style="display: none;">
+                                                                    <!-- Selected Child Ages will be dynamically added here -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-more-rooms">
+                                                    <button type="button" class="add-room-button">Add Room</button>
+                                                    <button type="button" class="apply-button">Apply</button>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="search-btn">
+                                        <a href="hotel-result.html"><img src="image/search/search-ico.svg" alt="">Search</a>
+                                    </div>
+                                </form>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="recent-search">
+        <div class="container">
+            <div class="site-main-title">
+                <h2>Recent search</h2>
+            </div>
+            <div class="recent-search-bx">
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="home-ticket">
+                        <h5 id="travelType">One Way</h5>
+
+                            <div class="city-info px-3 mt-1 mb-2">
+                                <div class="from-city-name-ticket">
+                                    <h4>AHM</h4>
+                                </div>
+                                <div class="airline-icon-dcs">
+                                    <!-- <div class="flight-major-dtls">
+                                        <p>One Way</p>
+                                    </div> -->
+                                    <div class="arrow">
+                                    </div>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                            <g clip-path="url(#clip0_27_150)">
+                                              <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_27_150">
+                                                <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                              </clipPath>
+                                            </defs>
+                                          </svg>
+                                    </span>
+                                </div>
+                                <div class="to-city-name-ticket">
+                                    <h4>Sin</h4>
+                                </div>
+                            </div>
+                            <h5>2023-04-23</h5>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="home-ticket">
+                        <h5>Round - Trip</h5>
+
+                            <div class="city-info px-3 mt-1 mb-2">
+                                <div class="from-city-name-ticket">
+                                    <h4>AHM</h4>
+                                </div>
+                                <div class="airline-icon-dcs">
+                                    <!-- <div class="flight-major-dtls">
+                                        <p>One Way</p>
+                                    </div> -->
+                                    <div class="arrow-recent">
+                                    </div>
+                                    <span>
+                                        <img src="image/round-trip.svg" alt="" class="">
+                                    </span>
+                                </div>
+                                <div class="to-city-name-ticket">
+                                    <h4>Sin</h4>
+                                </div>
+                            </div>
+                            <h5 class="two-date"><span>2023-04-24</span> <span>2023-04-23</span></h5>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="home-ticket">
+                        <h5>Multi City</h5>
+
+                            <div class="city-info px-3 mt-1 mb-2">
+                                <div class="from-city-name-ticket">
+                                    <h4>AHM</h4>
+                                </div>
+                                <div class="airline-icon-dcs">
+                                    <!-- <div class="flight-major-dtls">
+                                        <p>One Way</p>
+                                    </div> -->
+                                    <div class="arrow-recent">
+                                    </div>
+                                    <span>
+                                        <img src="image/round-trip.svg" alt="" class="">
+                                    </span>
+                                </div>
+                                <div class="to-city-name-ticket">
+                                    <h4>Sin</h4>
+                                </div>
+                            </div>
+                            <h5>2023-04-23</h5>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="home-ticket">
+                        <h5 id="travelType" >One Way</h5>
+
+                            <div class="city-info px-3 mt-1 mb-2">
+                                <div class="from-city-name-ticket">
+                                    <h4>AHM</h4>
+                                </div>
+                                <div class="airline-icon-dcs">
+                                    <!-- <div class="flight-major-dtls">
+                                        <p>One Way</p>
+                                    </div> -->
+                                    <div class="arrow">
+                                    </div>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                                            <g clip-path="url(#clip0_27_150)">
+                                              <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_27_150">
+                                                <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                              </clipPath>
+                                            </defs>
+                                          </svg>
+                                    </span>
+                                </div>
+                                <div class="to-city-name-ticket">
+                                    <h4>Sin</h4>
+                                </div>
+                            </div>
+                            <h5>2023-04-23</h5>
+                        </div>
+                    </div>
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-trip">
+        <div class="container">
+            <div class="site-main-title">
+                <h2>Your upcoming trip</h2>
+                <a href="#">More <img src="image/search/right-arrow.svg" class="ms-1" width="12" height="12"></a>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="next-trip-ticket">
+                        <div class="airline-name d-flex align-items-center justify-content-center">
+                            <img src="image/search/airline.svg" width="20" height="20" alt="dummy-airline">
+                            <!-- <span>Vistara</span> -->
+                        </div>
+                        <div class="flight-city-dtls d-flex align-items-center justify-content-center mb-3 px-4">
+                            <div class="from-city-name-ticket">
+                                <h4>AHM</h4>
+                                <span>Ahmedabad, India</span>
+                                <span>April 23, 2023</span>
+                            </div>
+                            <div class="airline-icon-dcs">
+                                <div class="flight-major-dtls">
+                                    <p>2H 15M</p>
+                                    <p>Direct Flight</p>
+                                </div>
+                                <div class="arrow">
+                                </div>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
+                                        <g clip-path="url(#clip0_27_150)">
+                                          <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_27_150">
+                                            <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </span>
+                                <h6>One-way</h6>
+                                <div class="booking-status booking-success">
+                                    Confirmed Booking
+                                </div>
+                            </div>
+                            <div class="to-city-name-ticket">
+                                <h4>Sin</h4>
+                                <span>Singapore, Changi</span>
+                                <span>April 24, 2023</span>
+                            </div>
+                        </div>
+                        <div class="booking-update position-relative">
+                            <div class="booking-status-brdr"></div>
+                        </div>
+                        <div class="ticket-number-dtls">
+                            <div class="tick-book-dtls">
+                                <p>Your booking No. With Rehlty</p>
+                                <span>0000001</span>
+                            </div>
+                            <div class="tick-book-dtls">
+                                <p>Airline reference number</p>
+                                <span>ML0000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="feature-flights">
+                <div class="site-main-title">
+                    <h2>Featured Flights</h2>
+                </div>
+                <div class="home-flights-list">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="feature-flight-dtls">
+                                <div class="airline-dtls">
+                                    <div class="airline-img">
+                                        <img src="image/search/airline.svg" alt="">
+                                    </div>
+                                    <div class="ariline-name-city">
+                                        <h5 class="mb-0"><a href="#">Malaysia Airlines</a></h5>
+                                        <span>Ahmedabad <img src="image/right-lon.svg" alt=""> Dubai</span>
+                                    </div>
+                                </div>
+                                <div class="booking-status-brdr"></div>
+                                <div class="ticket-price-dtls">
+                                    <h4>SAR 200.00</h4>
+                                    <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="feature-flight-dtls">
+                                <div class="airline-dtls">
+                                    <div class="airline-img">
+                                        <img src="image/search/airline.svg" alt="">
+                                    </div>
+                                    <div class="ariline-name-city">
+                                        <h5 class="mb-0"><a href="#">Malaysia Airlines</a></h5>
+                                        <span>Ahmedabad <img src="image/right-lon.svg" alt=""> Dubai</span>
+                                    </div>
+                                </div>
+                                <div class="booking-status-brdr"></div>
+                                <div class="ticket-price-dtls">
+                                    <h4>SAR 200.00</h4>
+                                    <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="feature-flight-dtls">
+                                <div class="airline-dtls">
+                                    <div class="airline-img">
+                                        <img src="image/search/airline.svg" alt="">
+                                    </div>
+                                    <div class="ariline-name-city">
+                                        <h5 class="mb-0"><a href="#">Malaysia Airlines</a></h5>
+                                        <span>Ahmedabad <img src="image/right-lon.svg" alt=""> Dubai</span>
+                                    </div>
+                                </div>
+                                <div class="booking-status-brdr"></div>
+                                <div class="ticket-price-dtls">
+                                    <h4>SAR 200.00</h4>
+                                    <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="feature-flight-dtls">
+                                <div class="airline-dtls">
+                                    <div class="airline-img">
+                                        <img src="image/search/airline.svg" alt="">
+                                    </div>
+                                    <div class="ariline-name-city">
+                                        <h5 class="mb-0"><a href="#">Malaysia Airlines</a></h5>
+                                        <span>Ahmedabad <img src="image/right-lon.svg" alt=""> Dubai</span>
+                                    </div>
+                                </div>
+                                <div class="booking-status-brdr"></div>
+                                <div class="ticket-price-dtls">
+                                    <h4>SAR 200.00</h4>
+                                    <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="feature-flight-dtls">
+                                <div class="airline-dtls">
+                                    <div class="airline-img">
+                                        <img src="image/search/airline.svg" alt="">
+                                    </div>
+                                    <div class="ariline-name-city">
+                                        <h5 class="mb-0"><a href="#">Malaysia Airlines</a></h5>
+                                        <span>Ahmedabad <img src="image/right-lon.svg" alt=""> Dubai</span>
+                                    </div>
+                                </div>
+                                <div class="booking-status-brdr"></div>
+                                <div class="ticket-price-dtls">
+                                    <h4>SAR 200.00</h4>
+                                    <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="feature-flight-dtls">
+                                <div class="airline-dtls">
+                                    <div class="airline-img">
+                                        <img src="image/search/airline.svg" alt="">
+                                    </div>
+                                    <div class="ariline-name-city">
+                                        <h5 class="mb-0"><a href="#">Malaysia Airlines</a></h5>
+                                        <span>Ahmedabad <img src="image/right-lon.svg" alt=""> Dubai</span>
+                                    </div>
+                                </div>
+                                <div class="booking-status-brdr"></div>
+                                <div class="ticket-price-dtls">
+                                    <h4>SAR 200.00</h4>
+                                    <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="feature-flights">
+                <div class="site-main-title">
+                    <h2>Featured Hotels</h2>
+                </div>
+                <div class="home-hotels-list">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="feature-hotels-dtls">
+                                <div class="hotel-dtl-bx">
+                                    <div class="hotel-bx-img">
+                                        <img src="image/dummy-hotel.png">
+                                        <div class="hotel-ratings">
+                                            <img src="image/rating-star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel-dtls">
+                                        <h5>Dubai Palm Hotel</h5>
+                                        <span><img src="image/map-pin.svg" class="me-1" alt="">Al Mateena St - Deira - Dubai</span>
+                                        <div class="hotel-price-dtls">
+                                            <h4>SAR 400.00</h4>
+                                            <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feature-hotels-dtls">
+                                <div class="hotel-dtl-bx">
+                                    <div class="hotel-bx-img">
+                                        <img src="image/dummy-hotel.png">
+                                        <div class="hotel-ratings">
+                                            <img src="image/rating-star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel-dtls">
+                                        <h5>Dubai Palm Hotel</h5>
+                                        <span><img src="image/map-pin.svg" class="me-1" alt="">Al Mateena St - Deira - Dubai</span>
+                                        <div class="hotel-price-dtls">
+                                            <h4>SAR 400.00</h4>
+                                            <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feature-hotels-dtls">
+                                <div class="hotel-dtl-bx">
+                                    <div class="hotel-bx-img">
+                                        <img src="image/dummy-hotel.png">
+                                        <div class="hotel-ratings">
+                                            <img src="image/rating-star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel-dtls">
+                                        <h5>Dubai Palm Hotel</h5>
+                                        <span><img src="image/map-pin.svg" class="me-1" alt="">Al Mateena St - Deira - Dubai</span>
+                                        <div class="hotel-price-dtls">
+                                            <h4>SAR 400.00</h4>
+                                            <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feature-hotels-dtls">
+                                <div class="hotel-dtl-bx">
+                                    <div class="hotel-bx-img">
+                                        <img src="image/dummy-hotel.png">
+                                        <div class="hotel-ratings">
+                                            <img src="image/rating-star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel-dtls">
+                                        <h5>Dubai Palm Hotel</h5>
+                                        <span><img src="image/map-pin.svg" class="me-1" alt="">Al Mateena St - Deira - Dubai</span>
+                                        <div class="hotel-price-dtls">
+                                            <h4>SAR 400.00</h4>
+                                            <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="feature-hotels-dtls">
+                                <div class="hotel-dtl-bx">
+                                    <div class="hotel-bx-img">
+                                        <img src="image/dummy-hotel.png">
+                                        <div class="hotel-ratings">
+                                            <img src="image/rating-star.svg" alt="">
+                                            <span>4.5</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel-dtls">
+                                        <h5>Dubai Palm Hotel</h5>
+                                        <span><img src="image/map-pin.svg" class="me-1" alt="">Al Mateena St - Deira - Dubai</span>
+                                        <div class="hotel-price-dtls">
+                                            <h4>SAR 400.00</h4>
+                                            <a href="#">View Details <img src="image/right-long-red.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="exclusive-offers">
+        <div class="container">
+            <div class="site-black-title d-flex align-items-center justify-content-between mb-4">
+                <h2>Best offers</h2>
+                <a href="#">More <img src="image/search/right-arrow.svg" class="ms-1" width="12" height="12"></a>
+            </div>
+            <div class="row gx-3 gy-3 d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="citys-bx">
+                        <div class="city-img-bx">
+                            <img src="image/excluive-offer.png" alt="">
+                        </div>
+                        <div class="city-detail">
+                            <div class="offer-name-discout">
+                                <span>Destination Wedding Gift</span>
+                                <p>* 30% off up to</p>
+                            </div>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="citys-bx">
+                        <div class="city-img-bx">
+                            <img src="image/excluive-offer.png" alt="">
+                        </div>
+                        <div class="city-detail">
+                            <div class="offer-name-discout">
+                                <span>Destination Wedding Gift</span>
+                                <p>* 30% off up to</p>
+                            </div>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="citys-bx">
+                        <div class="city-img-bx">
+                            <img src="image/excluive-offer.png" alt="">
+                        </div>
+                        <div class="city-detail">
+                            <div class="offer-name-discout">
+                                <span>Destination Wedding Gift</span>
+                                <p>* 30% off up to</p>
+                            </div>
+                            <a href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="exclusive-offers">
+        <div class="container">
+            <div class="site-black-title d-flex align-items-center justify-content-between mb-4">
+                <h2>Summer offers</h2>
+                <a href="#">More <img src="image/search/right-arrow.svg" class="ms-1" width="12" height="12"></a>
+            </div>
+            <div class="row gx-3 gy-3 d-flex justify-content-center summer-offer-divs">
+                <!-- ccc (in style.css remove width 20%) -->
+                <div class="summer-offer-bx">
+                    <div class="citys-bx">
+                        <a href="#">
+                        <div class="city-img-bx">
+                            <img src="image/summer-special-offer.png" alt="">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="summer-offer-bx">
+                    <div class="citys-bx">
+                        <a href="#">
+                        <div class="city-img-bx">
+                            <img src="image/summer-special-offer.png" alt="">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="summer-offer-bx">
+                    <div class="citys-bx">
+                        <a href="#">
+                        <div class="city-img-bx">
+                            <img src="image/summer-special-offer.png" alt="">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="summer-offer-bx">
+                    <div class="citys-bx">
+                        <a href="#">
+                        <div class="city-img-bx">
+                            <img src="image/summer-special-offer.png" alt="">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="summer-offer-bx">
+                    <div class="citys-bx">
+                        <a href="#">
+                        <div class="city-img-bx">
+                            <img src="image/summer-special-offer.png" alt="">
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center down-text">
+                        <div class="download-txt">
+                            <h5>Download Now !</h5>
+                            <h2>Rehlte Application</h2>
+                            <p>Enjoy the best exclusive offers and collect rehlte travel points
+                                to get more discount...</p>
+                        </div>
+                        <div class="qr-download d-flex align-items-center">
+                            <img src="image/qrcode.png" alt="">
+                            <div class="scan-txt ms-3">
+                                <p>Scan this QR code for</p>
+                                <span>Download The App</span>
+                            </div>
+                        </div>
+                        <div class="marketplace-download mt-3">
+                            <ul class="ps-0 d-flex align-items-center">
+                                <li>
+                                    <a href="#">
+                                        <img src="image/playstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appgallary.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="download-app-img">
+                        <img class="w-full ltr-dir-img" src="image/download-rehlte.png" alt="">
+                        <img class="w-full rtl-dir-img" src="image/download-rehlte-rtl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>About Rehlte</h5>
+                        <p>about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty</p>
+                        <a href="#" class="read-more-btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-xs-12">
+                    <div class="footer-cont footer-links">
+                        <h5>Quick links</h5>
+                        <div class="bottom-site-urls">
+                            <ul>
+                                <li>
+                                    <a href="#">Spcial Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Summer Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Bridal Shows
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Explore Destinations
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="terms-condition.html">Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont social-links">
+                        <h5>Follow us on</h5>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="image/social/snapchat.svg" alt="">Snapchat</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/twitter.svg" alt="">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/google.svg" alt="">Google</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/facebook.svg" alt="">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>Instagram</h5>
+                        <div class="insta-posts">
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights-footer">
+        <p>Copyright © 2023 .All rights reserved by <a href="#">Rehlte</a>. Designed by <a
+                href="https://www.amarinfotech.com/" target="_blank">Amar Infotech</a></p>
+    </div>
+
+    <div class="go-top"></div>
+
+    <!-- Login & create account popup -->
+    <!-- Modal -->
+    <!-- login popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Sign in</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Continue with</h5>
+                <div class="login-tabs">
+                    <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <a
+                            class="nav-link active"
+                            id="ex1-tab-1-login"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-1-login"
+                            role="tab"
+                            aria-controls="ex1-tabs-1-login"
+                            aria-selected="true"
+                            >Mobile Number</a
+                        >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <a
+                            class="nav-link"
+                            id="ex1-tab-2-login"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-2-login"
+                            role="tab"
+                            aria-controls="ex1-tabs-2-login"
+                            aria-selected="false"
+                            >E-Mail</a
+                        >
+                        </li>
+                    </ul>
+                    <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-login">
+                        <div
+                        class="tab-pane fade show active"
+                        id="ex1-tabs-1-login"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-1-login"
+                        >
+                        <form action="">
+                            <div class="form-floating">
+                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile Number *" name="number" required>
+                            </div>
+                            <div class="form-floating mt-2">
+                                <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                <label for="floatingPassword">Password</label>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" onclick="password_show_hide();">
+                                    <i class="fas fa-eye show_eye"></i>
+                                    <i class="fas fa-eye-slash d-none hide_eye"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="sign-in-btn">
+                                <button>Sign in</button>
+                            </div>
+                        </form>
+                        <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot your password ?</a>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2-login" role="tabpanel" aria-labelledby="ex1-tab-2-login">
+                            <form action="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address *</label>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                        <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                        <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="sign-in-btn">
+                                    <button>Sign in</button>
+                                </div>
+                            </form>
+                            <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot your password ?</a>
+                        </div>
+                        <div class="other-login-opts">
+                            <span>OR</span>
+                        </div>
+                        <div class="social-media-logins mb-4">
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/apple-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/google-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/twitter.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/instagram.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/facebook.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>Don't have account? <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Create a new account</a></span>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- singup popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle2" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Create New Account</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Continue with</h5>
+                <div class="login-tabs">
+                    <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link active"
+                            id="ex1-tab-1-register"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-1-register"
+                            role="tab"
+                            aria-controls="ex1-tabs-1-register"
+                            aria-selected="true"
+                            >Mobile Number</a
+                            >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link"
+                            id="ex1-tab-2-register"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-2-register"
+                            role="tab"
+                            aria-controls="ex1-tabs-2-register"
+                            aria-selected="false"
+                            >E-Mail</a
+                            >
+                        </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-register">
+                        <div
+                            class="tab-pane fade show active"
+                            id="ex1-tabs-1-register"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1-register"
+                        >
+                        <form action="">
+                            <div class="form-floating">
+                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile Number *" name="number" required>
+                            </div>
+                            <div class="form-floating mt-2">
+                                <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                <label for="floatingPassword">Password</label>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" onclick="password_show_hide();">
+                                        <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                        <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                    </span>
+                                    </div>
+                            </div>
+                            <p class="create-account-note">The password must be composed of letters or numbers, in Latin letters so that it includes uppercase and lowercase letters</p>
+                            <div class="sign-in-btn">
+                                <button class="mt-0">Create Account</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2-register" role="tabpanel" aria-labelledby="ex1-tab-2-register">
+                            <form action="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address *</label>
+                                    </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                        </div>
+                                </div>
+                                <p class="create-account-note">The password must be composed of letters or numbers, in Latin letters so that it includes uppercase and lowercase letters</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0">Create Account</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="other-login-opts mt-5">
+                            <span>OR</span>
+                        </div>
+                        <div class="social-media-logins mb-4">
+                            <ul class="mb-0">
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/apple-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/google-id.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/twitter.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/instagram.svg" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img width="35" height="35" src="image/login/facebook.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span>Have Account ? <a  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- forgot pass popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle3" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel">Forgot Password</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>Reset Password using</h5>
+                <div class="login-tabs forgot-pass-filds">
+                    <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link active"
+                            id="ex1-tab-1-forgot"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-1-forgot"
+                            role="tab"
+                            aria-controls="ex1-tabs-1-forgot"
+                            aria-selected="true"
+                            >Mobile Number</a
+                            >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a
+                            class="nav-link"
+                            id="ex1-tab-2-forgot"
+                            data-bs-toggle="tab"
+                            href="#ex1-tabs-2-forgot"
+                            role="tab"
+                            aria-controls="ex1-tabs-2-forgot"
+                            aria-selected="false"
+                            >E-Mail</a
+                            >
+                        </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-forgot">
+                        <div
+                            class="tab-pane fade show active"
+                            id="ex1-tabs-1-forgot"
+                            role="tabpanel"
+                            aria-labelledby="ex1-tab-1-forgot"
+                        >
+                        <form class="mb-3" action="">
+                            <div class="form-floating">
+                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile Number *" name="number" required>
+                            </div>
+                            <p class="create-account-note">Please enter the mobile number that was
+                                used to create your Rehlaty account</p>
+                            <div class="sign-in-btn">
+                                <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="tab-pane fade" id="ex1-tabs-2-forgot" role="tabpanel" aria-labelledby="ex1-tab-2-forgot">
+                            <form class="mb-3" action="">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label for="floatingInput">Email address *</label>
+                                    </div>
+                                <p class="create-account-note">Please enter the email-id that was
+                                    used to create your Rehlaty account</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                        <span>Remember Password ? <a  data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- otp-sent -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle4" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="successfully-sent-otp">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/yqzmiobz.json"
+                            trigger="loop"
+                            delay="500"
+                            colors="primary:#44d97f"
+                            style="width:150px;height:150px">
+                        </lord-icon>
+                        <!-- <img src="image/right-tick.gif" width="150" height="150" alt=""> -->
+                        <h4>The activation code has been sent
+                            to the Mobile Number</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- enter otp popup-->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle5" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalToggleLabel">Enter OTP</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-tabs forgot-pass-filds">
+                            <form class="mb-3" action="">
+                                <div class="form-floating otp-inputs mb-4 mt-4">
+                                    <input id="otp-first" type="number" min="0" max="9" step="1" aria-label="first digit" />
+                                    <input id="otp-second" type="number" min="0" max="9" step="1" aria-label="second digit" />
+                                    <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="third digit" />
+                                    <input id="otp-fourth" type="number" min="0" max="9" step="1" aria-label="fourth digit" />
+                                    <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="five digit" />
+                                    <input id="otp-fourth" type="number" min="0" max="9" step="1" aria-label="six digit" />
+                                </div>
+                                <p class="create-account-note">Please enter the OTP we have shared on <br> <b>+91 12345667890</b></p>
+                            </form>
+                            <div class="sign-in-btn">
+                                <button data-bs-target="#exampleModalToggle6" data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- set new password -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle6" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Set New Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-tabs forgot-pass-filds">
+                        <div class="set-new-pass">
+                            <form action="">
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">New Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                        </div>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                    <label for="floatingPassword">Confirm Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                        </div>
+                                </div>
+                                <p class="create-account-note mt-3">The password must be composed of letters or numbers, in Latin letters so that it includes uppercase and lowercase letters</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+
+        <script>
+        </script>
+    <script src='js/main.js'></script>
+    <!-- top-right -->
+    <div class="top-right">
+        <div class="top-right-content">
+            <div class="left-side">
+                <h4>Download Our App To Get More Feature !</h4>
+            </div>
+            <div class="center-side">
+                <button>Download Now</button>
+            </div>
+            <div class="right-side">
+                <button  id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+        </div>
+    </div>
+    <script>
+          $(document).ready(function(){
+            $("div").click(function(){
+             $(".top-right").fadeOut(200);
+                });
+            });
+    </script>
+</body>
+
+</html>

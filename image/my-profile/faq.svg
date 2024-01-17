@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.13 17.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff0007;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #eb1c24;
+        font-family: DINNextLTArabic-Regular, 'DIN Next LT Arabic';
+        font-size: 13px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-1" d="m0,8.07C0,3.62,3.62,0,8.07,0s8.07,3.62,8.07,8.07-3.62,8.07-8.07,8.07S0,12.52,0,8.07Zm1.12,0c0,3.83,3.12,6.95,6.95,6.95s6.95-3.12,6.95-6.95S11.9,1.12,8.07,1.12,1.12,4.24,1.12,8.07Z"/>
+      <text class="cls-2" transform="translate(11.08 12.2) rotate(-180) scale(1 -1)"><tspan x="0" y="0">؟</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rehlte - Travel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/responsive-en.css'>
+    <!-- NEW CSS LINK -->
+    <!-- <link rel="stylesheet" href="css/hotel-re.css"> -->
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+            <img src="image/loader.svg" alt="">
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="mob-menu-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="image/logo.svg" class="header-logo" alt="logo">
+                            </a>
+                        </div>
+                        <div class="side-menu-mobile">
+                            <div class="menu-button__wrapper">
+                                <div class="menu-button">
+                                    <span class="menu-button__bar"></span>
+                                    <span class="menu-button__bar"></span>
+                                    <span class="menu-button__bar"></span>
+                                </div>
+                            </div>
+                            <div class="menu-overlay">
+                                <nav class="nav">
+                                    <a class="nav__item" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-ticket"></i>Bookings</a>
+                                </nav>
+                                <nav class="nav">
+                                    <a class="nav__item" href="index.html"><i class="fa-solid fa-plane"></i>Flights</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+                                </nav>
+                                <nav class="nav">
+                                    <a class="nav__item" href="index.html"><i class="fa-solid fa-language"></i>Change
+                                        languge</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-dollar-sign"></i>Currency</a>
+                                    <a class="nav__item" href="#v-pills-messages"><img src="image/my-profile/faq.svg"
+                                            alt="">FAQ</a>
+                                    <a class="nav__item" href="#v-pills-privacy"><img
+                                            src="image/my-profile/privacy-policy.svg" alt="">Privacy Policy</a>
+                                    <a class="nav__item" href="#v-pills-condition"><img
+                                            src="image/my-profile/terms-condition.svg" alt="">Terms & Conditions</a>
+                                    <a class="nav__item" href="#v-pills-settings"><img
+                                            src="image/my-profile/about-us.svg" alt="">About Us</a>
+                                </nav>
+                            </div>
+                            <div class="background-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="side-menu-opts">
+                        <!-- <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="image/flight.svg" width="25" height="25" alt="flight-menu">
+                                        flight</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/hotel.svg" width="25" height="25"
+                                            alt="hotel-menu">hotels</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="user-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank"><img src="image/wp.svg" width="30" height="30"
+                                            alt="">920022222</a>
+                                </li>
+                                <li>
+                                    <select id="selectbox1">
+                                        <option value="">SAR</option>
+                                        <option value="aye">INR</option>
+                                        <option value="eh">USD</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/wallet.svg" width="20" height="20" alt="">my points</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#"><img src="image/user.svg" width="20" height="20" alt="">Abdelsalam</a>
+                                </li> -->
+                                <li>
+                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"><img
+                                            src="image/user.svg" width="20" height="20" alt="">Sign In</a>
+                                </li>
+                                <li class="me-0">
+                                    <div class="switches-container">
+                                        <input type="radio" id="ar" name="lang" value="ar" />
+                                        <input type="radio" id="en" name="lang" value="en" checked="checked" />
+                                        <label for="ar" class="arabic-txt">ع</label>
+                                        <label for="en">En</label>
+                                        <div class="switch-wrapper">
+                                            <div class="switch">
+                                                <div class="arabic-txt">ع</div>
+                                                <div>En</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-flight-dtls my-4">
+        <div class="container">
+         <div class="hotels-search-fileds">
+             <div class="one-way-flight-search round-trip-search">
+                 <form action="">
+                     <div class="departure-date">
+                         <div class="depart-date position-relative mb-0">
+                             <input type="text" id="datepicker1" value="07-12-2023" class="datepicker" autocomplete="off" placeholder="Check In Date">
+                             <label for=""><img src="image/search/calender.svg" alt=""></label>
+                         </div>
+                     </div>
+                     <div class="departure-date">
+                        <div class="depart-date position-relative mb-0">
+                            <input type="text" id="datepicker2" value="08-12-2023" class="datepicker" autocomplete="off" placeholder="Check Out Date">
+                            <label for=""><img src="image/search/calender.svg" alt=""></label>
+                        </div>
+                     </div>
+                     <div class="travellers-info hotel-class-select hotel-detail-inputs">
+                          <select id="selectbox2" class="class-selection">
+                             <option value="">Super Delux</option>
+                             <option value="aye">Delux</option>
+                             <option value="eh">Premium</option>
+                         </select>
+                     </div>
+                     <div class="travellers-info hotel-class-select hotel-detail-inputs">
+                        <select id="selectbox2" class="class-selection">
+                            <option value="">Bed Only</option>
+                                            <option value="aye">Bed and Breakfast</option>
+                                            <option value="eh">Breakfast + Lunch</option>
+                                            <option value="eh2">Breakfast + Lunch + Dinner</option>
+                                            <option value="eh2">Lunch + Dinner</option>
+                                            <option value="eh3">All Inclusive</option>
+                        </select>
+                     </div>
+                     <div class="travellers-info hotel-class-select form-input hotel-detail-inputs">
+                         <input type="text" autocomplete="off" readonly value="1 Room | 2 Travelers" class="expander w-100 main-travlers-list-visible">
+                         <label for=""><i class="fa-solid fa-user"></i></label>
+                         <div class="travellers-info-drop" id="TableData">
+                             <div id="rooms-container">
+                                 <div class="traveller-rooms">
+                                     <h5>Room 1 <span class="remove-rooms" style="display:none;"><i class="fa-solid fa-trash"></i>Delete</span></h5>
+                                     <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                         2 Travelers
+                                         <i class="fa-solid fa-chevron-down"></i>
+                                     </a>
+                                     <div class="collapse" id="collapseExample">
+                                         <div class="card card-body">
+                                             <span class="travel-titl-spans">
+                                                 Adult (13+)
+                                                 <div class="counters-hotel-travellrs">
+                                                     <div class="input-group w-auto align-items-center">
+                                                         <button type="button" class="button-minus border  icon-shape icon-sm mx-1 " data-field="quantity">-</button>
+                                                         <input type="number" step="1" max="10" placeholder="Adult (12+)" value="2" name="quantity" class="quantity-field border-0 text-center w-25" disabled>
+                                                         <button type="button" class="button-plus border icon-shape icon-sm " data-field="quantity">+</button>
+                                                     </div>
+                                                 </div>
+                                             </span>
+                                             <span class="travel-titl-spans">
+                                                 Child (2-12)
+                                                 <div class="counters-hotel-travellrs">
+                                                     <div class="input-group w-auto align-items-center mb-1">
+                                                         <button type="button" class="custom-button-minus border icon-shape icon-sm mx-1" data-field="quantity">-</button>
+                                                         <input type="number" step="1" max="6" placeholder="Child (2-12)" value="0" name="quantity" class="custom-quantity-field border-0 text-center w-25" disabled>
+                                                         <button type="button" class="custom-button-plus border icon-shape icon-sm" data-field="quantity">+</button>
+                                                     </div>
+                                                 </div>
+                                             </span>
+                                             <div class="child-age-opts" style="display: none;">
+                                                 <!-- Selected Child Ages will be dynamically added here -->
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="add-more-rooms">
+                                 <button type="button" class="add-room-button">Add Room</button>
+                                 <button type="button" class="apply-button">Apply</button>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="search-btn hotel-detail-modify-btn">
+                         <a href="hotel-result.html">Modify Search</a>
+                     </div>
+                 </form>
+               </div>
+         </div>
+        </div>
+     </div>
+
+    <div class="hotel-basic-infos">
+        <div class="container">
+            <div class="selected-hotel-names">
+                <h3>Millennium Atria Business Bay - Executive One bed - Burj Khalifa Partial View</h3>
+                <div class="hotel-rate-review">
+                    <div class="hotel-revew-checkouts">
+                        <div class="hotel-ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <span>| 1,522 Reviews</span>
+                    </div>
+                    <div class="hotel-checkouts-checkin">
+                        <p>Check In:- <span>24 Oct 2023</span> , Checkout:- <span>26 Oct 2023</span></p>
+                    </div>
+                </div>
+                <p><i class="fa-solid fa-location-dot"></i>Marasi Dr - Business Bay - Dubai, United Arab Emirates</p>
+            </div>
+            <div class="hotels-photos-base-price my-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 p-0">
+                            <div class="hotels-photos">
+                                <div id="gallery" class="photos-grid-container gallery">
+                                    <div class="main-photo img-box">
+                                        <a href="https://images.pexels.com/photos/12565208/pexels-photo-12565208.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                            class="glightbox" data-glightbox="type: image"><img
+                                                src="https://images.pexels.com/photos/12565208/pexels-photo-12565208.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                                                alt="image" /></a>
+                                    </div>
+                                    <div>
+                                        <div class="sub">
+                                            <div class="img-box"><a
+                                                    href="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/88/c0/b2.jpg"
+                                                    class="glightbox" data-glightbox="type: image"><img
+                                                        src="https://media.tacdn.com/media/attractions-splice-spp-674x446/06/88/c0/b2.jpg"
+                                                        alt="image" /></a></div>
+                                            <div id="multi-link" class="img-box">
+                                                <a href="https://www.factmagazines.com/wp-content/uploads/2022/02/Nobu-Dubai-%E2%80%93-Atlantis-The-Palm-1-1-scaled.webp"
+                                                    class="glightbox" data-glightbox="type: image">
+                                                    <img src="https://www.factmagazines.com/wp-content/uploads/2022/02/Nobu-Dubai-%E2%80%93-Atlantis-The-Palm-1-1-scaled.webp"
+                                                        alt="image" />
+                                                    <div class="transparent-box">
+                                                        <div class="caption">
+                                                            +3 More Photos
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="more-img" class="extra-images-container hide-element">
+                                        <a href="https://www.worldwidelux.com/2.0/wp-content/uploads/2021/04/1underwatersuitebathroom1-865660.jpg"
+                                            class="glightbox" data-glightbox="type: image"><img
+                                                src="https://www.worldwidelux.com/2.0/wp-content/uploads/2021/04/1underwatersuitebathroom1-865660.jpg"
+                                                alt="image" /></a>
+                                        <a href="https://voyagefox.net/wp-content/uploads/2021/06/Atlantis-The-Palm-Dubai-royal-bridge-suite-living-room.jpg"
+                                            class="glightbox" data-glightbox="type: image"><img
+                                                src="https://voyagefox.net/wp-content/uploads/2021/06/Atlantis-The-Palm-Dubai-royal-bridge-suite-living-room.jpg"
+                                                alt="image" /></a>
+                                        <a href="https://media-cdn.tripadvisor.com/media/photo-m/1280/21/6f/61/93/atlantis-the-palm.jpg"
+                                            class="glightbox" data-glightbox="type: image"><img
+                                                src="https://media-cdn.tripadvisor.com/media/photo-m/1280/21/6f/61/93/atlantis-the-palm.jpg"
+                                                alt="image" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="find-hotel-map">
+                                <p>Find this hotel on map</p>
+                                <a href="#">Locate Now <i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div class="hotel-basic-price-bx">
+                                <h5>Classic Room <span><i class="fa-solid fa-user"></i>For 2 Guests</span></h5>
+                                <div class="room-base-price">
+                                    <div class="feture-inclued">
+                                        <ul>
+                                            <li>Free Cancellation</li>
+                                            <li>Room Only</li>
+                                            <li>Breakfast Included</li>
+                                        </ul>
+                                    </div>
+                                    <div class="selected-rrom-price">
+                                        <span>7% Discount</span>
+                                        <h4>SAR 946</h4>
+                                        <h6>SAR 1017</h6>
+                                    </div>
+                                </div>
+                                <div class="book-room-btn">
+                                    <a href="#rooms">other rooms</a>
+                                    <button>Book Now<i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="hotels-cancellation-policy">
+                                <p>* This price showing per night</p>
+                                <a href="#"><i class="fa-solid fa-circle-info"></i>Cancellation Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-main-details">
+                <div class="hotels-details-tabs">
+                    <ul>
+                        <li class="active" onclick="changeTab('overview')">
+                            Overview
+                        </li>
+                        <li onclick="changeTab('rooms')">
+                            Rooms
+                        </li>
+                        <li onclick="changeTab('facilities')">
+                            Facilities
+                        </li>
+                        <li onclick="changeTab('location')">
+                            Location
+                        </li>
+                        <li onclick="changeTab('policies')">
+                            policies
+                        </li>
+                        <li onclick="changeTab('rating-reviews')">
+                            rating & reviews
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-inner-main-data">
+                    <div id="overview" class="hotel-overview-details">
+                        <p>
+                            Traveling anytime soon? Looking for a value for money accommodation? This charming property
+                            has everything required to make your stay memorable. It is exclusively designed with
+                            travelers requirements in mind. It encloses a comfortably furnished bedroom, with a snuggly
+                            bed covered with spotless linen. To make your stay hassle-free, OYO has implemented a
+                            complete set of modern day amenities. The living space is furnished with top-notch furniture
+                            and enhanced with trendy decor. Not to forget, cleanliness is always right up there on our
+                            priority list. Getting around through public transport is quite convenient. The city has
+                            something for every traveler. You just have to go outside and explore! If you are traveler
+                            looking for a comfortable stay, this is a great choice to make. We, at OYO, look forward to
+                            ensuring round the clock assistance to make your experience a delightful one. Come soon!
+                            Traveling anytime soon? Looking for a value for money accommodation? This charming property
+                            has everything required to make your stay memorable. It is exclusively designed with
+                            travelers requirements in mind. It encloses a comfortably furnished bedroom, with a snuggly
+                            bed covered with spotless linen. To make your stay hassle-free, OYO has implemented a
+                            complete set of modern day amenities. The living space is furnished with top-notch furniture
+                            and enhanced with trendy decor. Not to forget, cleanliness is always right up there on our
+                            priority list. Getting around through public transport is quite convenient. The city has
+                            something for every traveler. You just have to go outside and explore! If you are traveler
+                            looking for a comfortable stay, this is a great choice to make. We, at OYO, look forward to
+                            ensuring round the clock assistance to make your experience a delightful one. Come soon!
+                        </p>
+                    </div>
+                    <div id="rooms" class="hotel-rooms-details table-responsive">
+                        <table class="table rooms-details-table table-bordered">
+                            <thead>
+                                <tr class="table-light">
+                                    <th scope="col">room type</th>
+                                    <th scope="col">options</th>
+                                    <th scope="col">inclueded in this price</th>
+                                    <th scope="col">price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th rowspan="2">
+                                        <div class="rooms-main-details">
+                                            <h5>Classic Room</h5>
+                                            <div class="rooms-image">
+                                                <img src="image/dummy-room.png" alt="">
+                                            </div>
+                                            <div class="rooms-sepcs">
+                                                <ul>
+                                                    <li>
+                                                        Room Size: 180 sq.ft
+                                                    </li>
+                                                    <li>
+                                                        Bed Type: double
+                                                    </li>
+                                                    <li>
+                                                        24-hour Room Service
+                                                    </li>
+                                                    <li>
+                                                        Air Conditioning (Room controlled)
+                                                    </li>
+                                                    <li>
+                                                        Wi-Fi
+                                                    </li>
+                                                    <li>
+                                                        Charging Points
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="rooms-options">
+                                                <span class="recomanded-opt">RECOMMENDED</span>
+                                                <h5>Room With Breakfast</h5>
+                                                <ul>
+                                                    <li class="included-items">
+                                                        <h6>Free Cancellation</h6>
+                                                        <p>Before 23-Oct-2023 12:00 PM IST</p>
+                                                    </li>
+                                                    <li class="included-items">
+                                                        <h6>Breakfast Included</h6>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="hotel-facilityes">
+                                                <ul>
+                                                    <li>
+                                                        accommodation
+                                                    </li>
+                                                    <li>
+                                                        taxes
+                                                    </li>
+                                                    <li>
+                                                        free breakfast
+                                                    </li>
+                                                    <li>
+                                                        swimming pool
+                                                    </li>
+                                                    <li>
+                                                        game zone
+                                                    </li>
+                                                    <a href="#">15+ more</a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="room-price-selection">
+                                                <div class="rooms-price-pnight">
+                                                    <span>Per Night</span>
+                                                    <h4>SAR 946</h4>
+                                                    <h6>SAR 1017</h6>
+                                                    <p>Earn 9 Points</p>
+                                                </div>
+                                                <button type="button" class="btn btn-success room-button selected"
+                                                    onclick="selectRoom(this)">Selected <i
+                                                        class="fa-solid fa-check"></i></button>
+                                            </div>
+                                            <div class="login-info-book mt-2">
+                                                <p>
+                                                    Login to use rehlte points to get more <br> discounts on your
+                                                    bookings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="rooms-main-details">
+                                            <div class="rooms-options">
+                                                <h5>Room Only</h5>
+                                                <ul>
+                                                    <li class="included-items">
+                                                        <h6>Free Cancellation</h6>
+                                                        <p>Before 23-Oct-2023 12:00 PM IST</p>
+                                                    </li>
+                                                    <li class="not-included-items">
+                                                        <h6>Breakfast Not Included</h6>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="hotel-facilityes">
+                                                <ul>
+                                                    <li>
+                                                        accommodation
+                                                    </li>
+                                                    <li>
+                                                        taxes
+                                                    </li>
+                                                    <li>
+                                                        free breakfast
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="room-price-selection">
+                                                <div class="rooms-price-pnight">
+                                                    <span>Per Night</span>
+                                                    <h4>SAR 1946</h4>
+                                                    <h6>SAR 2017</h6>
+                                                    <p>Earn 9 Points</p>
+                                                </div>
+                                                <button type="button" class="btn btn-primary room-button"
+                                                    onclick="selectRoom(this)">Select Room</button>
+                                            </div>
+                                            <div class="login-info-book mt-2">
+                                                <p>
+                                                    Login to use rehlte points to get more <br> discounts on your
+                                                    bookings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- second room -->
+                                <tr>
+                                    <th rowspan="2">
+                                        <div class="rooms-main-details">
+                                            <h5>Delux Room</h5>
+                                            <div class="rooms-image">
+                                                <img src="image/dummy-room.png" alt="">
+                                            </div>
+                                            <div class="rooms-sepcs">
+                                                <ul>
+                                                    <li>
+                                                        Room Size: 180 sq.ft
+                                                    </li>
+                                                    <li>
+                                                        Bed Type: double
+                                                    </li>
+                                                    <li>
+                                                        24-hour Room Service
+                                                    </li>
+                                                    <li>
+                                                        Air Conditioning (Room controlled)
+                                                    </li>
+                                                    <li>
+                                                        Wi-Fi
+                                                    </li>
+                                                    <li>
+                                                        Charging Points
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="rooms-options">
+                                                <span class="recomanded-opt">RECOMMENDED</span>
+                                                <h5>Room With Breakfast</h5>
+                                                <ul>
+                                                    <li class="included-items">
+                                                        <h6>Free Cancellation</h6>
+                                                        <p>Before 23-Oct-2023 12:00 PM IST</p>
+                                                    </li>
+                                                    <li class="included-items">
+                                                        <h6>Breakfast Included</h6>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="hotel-facilityes">
+                                                <ul>
+                                                    <li>
+                                                        accommodation
+                                                    </li>
+                                                    <li>
+                                                        taxes
+                                                    </li>
+                                                    <li>
+                                                        free breakfast
+                                                    </li>
+                                                    <li>
+                                                        swimming pool
+                                                    </li>
+                                                    <li>
+                                                        game zone
+                                                    </li>
+                                                    <a href="#">15+ more</a>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="room-price-selection">
+                                                <div class="rooms-price-pnight">
+                                                    <span>Per Night</span>
+                                                    <h4>SAR 946</h4>
+                                                    <h6>SAR 1017</h6>
+                                                    <p>Earn 9 Points</p>
+                                                </div>
+                                                <button type="button" class="btn btn-primary room-button"
+                                                    onclick="selectRoom(this)">Select Room</button>
+                                            </div>
+                                            <div class="login-info-book mt-2">
+                                                <p>
+                                                    Login to use rehlte points to get more <br> discounts on your
+                                                    bookings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div class="rooms-main-details">
+                                            <div class="rooms-options">
+                                                <h5>Room Only</h5>
+                                                <ul>
+                                                    <li class="included-items">
+                                                        <h6>Free Cancellation</h6>
+                                                        <p>Before 23-Oct-2023 12:00 PM IST</p>
+                                                    </li>
+                                                    <li class="not-included-items">
+                                                        <h6>Breakfast Not Included</h6>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Know More <i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="hotel-facilityes">
+                                                <ul>
+                                                    <li>
+                                                        accommodation
+                                                    </li>
+                                                    <li>
+                                                        taxes
+                                                    </li>
+                                                    <li>
+                                                        free breakfast
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="rooms-main-details">
+                                            <div class="room-price-selection">
+                                                <div class="rooms-price-pnight">
+                                                    <span>Per Night</span>
+                                                    <h4>SAR 1946</h4>
+                                                    <h6>SAR 2017</h6>
+                                                    <p>Earn 9 Points</p>
+                                                </div>
+                                                <button type="button" class="btn btn-primary room-button"
+                                                    onclick="selectRoom(this)">Select Room</button>
+                                            </div>
+                                            <div class="login-info-book mt-2">
+                                                <p>
+                                                    Login to use rehlte points to get more <br> discounts on your
+                                                    bookings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="facilities" class="hotel-facilities-details">
+                        <div class="hotels-facalities-list">
+                            <h4>Facilities at Millennium Atria Business Bay</h4>
+                        </div>
+                        <div class="facilities-base-lists">
+                            <ul>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-wifi"></i>
+                                        free WIFI
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-bell-concierge"></i>
+                                        room service
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-elevator"></i>
+                                        Elevator/Lift
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-utensils"></i>
+                                        Kitchenette
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        Indoor Games
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-taxi"></i>
+                                        Vehicle Rentals
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="facility-box">
+                                        <i class="fa-solid fa-wine-glass"></i>
+                                        Bar
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="category-facalities">
+                            <ul>
+                                <span>Highlighted Amenities</span>
+                                <li>
+                                    Kids Play Area
+                                </li>
+                                <li>
+                                    Indoor Games
+                                </li>
+                                <li>
+                                    Restaurant
+                                </li>
+                                <li>
+                                    Bar
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Basic Facilities</span>
+                                <li>
+                                    Dry Cleaning Service
+                                </li>
+                                <li>
+                                    Parking
+                                </li>
+                                <li>
+                                    Intercom
+                                </li>
+                                <li>
+                                    Power Backup
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Transfers</span>
+                                <li>
+                                    Paid Pickup/Drop
+                                </li>
+                                <li>
+                                    Paid Airport Transfers
+                                </li>
+                                <li>
+                                    Paid Bus Station Transfers
+                                </li>
+                                <li>
+                                    Paid Railway Station Transfers
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Family and kids</span>
+                                <li>
+                                    Kids Play Area
+                                </li>
+                                <li>
+                                    Swimming pool
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Food and Drinks</span>
+                                <li>
+                                    Restaurant
+                                </li>
+                                <li>
+                                    Bar
+                                </li>
+                                <li>
+                                    Kids' Meals
+                                </li>
+                                <li>
+                                    Dining Area
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="view-all-hotel-face">View All Amenities <i
+                                class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div id="location" class="hotel-location-details">
+                        <div class="hotel-location-map">
+                            <h4>Hotel Location On map</h4>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14962125.810535075!2d53.19244640698579!3d23.716594969212824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2sAtlantis%2C%20The%20Palm!5e0!3m2!1sen!2sin!4v1700824261319!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div id="policies" class="hotel-policies-details">
+                        <div class="hotels-rules-policy">
+                            <h4>Hotel Rules and Policies</h4>
+                            <p>Check in: 12 PM | Check-out: 11 AM</p>
+                        </div>
+                        <div class="hotels-policy-lists w-100">
+                            <ul>
+                                <span>Guest Profile</span>
+                                <li>
+                                    Guest Profile
+                                </li>
+                                <li>
+                                    Suitable for children.
+                                </li>
+                                <li>
+                                    Bachelors allowed
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Smoking/Alcohol</span>
+                                <li>
+                                    There are some restrictions on alcohol consumption.
+                                </li>
+                                <li>
+                                    Smoking within the premises is allowed
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Society Rules</span>
+                                <li>
+                                    Guests can checkin using local ID
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Payment Related</span>
+                                <li>
+                                    Credit/debit cards are accepted.Visa or Master card accepted
+                                </li>
+                                <li>
+                                    No security deposit is required
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Food Related</span>
+                                <li>
+                                    There are no restrictions on food for guests
+                                </li>
+                            </ul>
+                            <ul>
+                                <span>Pet(s) Related</span>
+                                <li>
+                                    Pets are not allowed
+                                </li>
+                            </ul>
+                            </ul>
+                            <ul>
+                                <span>Directions to reach
+                                    the property</span>
+                                <li>
+                                    Landmark to the property -NA
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="rating-reviews" class="hotel-rating-review-details">
+                        <div class="hotelsguest-reviews">
+                            <div class="reviews-guest-title">
+                                <h4>Verified Ratings & Reviews</h4>
+                                <p>Take a look at verified ratings & reviews posted by guests</p>
+                            </div>
+                            <div class="totale-review-showcase">
+                                <div class="rating-number-points">
+                                    4.5
+                                </div>
+                                <div class="review-cate-name">
+                                    <h5>VERY GOOD</h5>
+                                    <p>3165 User Reviews and 4822 Ratings</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guestes-review-lists mt-4">
+                            <div class="guest-review-bx">
+                                <h4>Best hotel in dubai</h4>
+                                <h5>Rated <span>4.0</span> by <b>Somya Martand</b>, Nov 10, 2019</h5>
+                                <p>The hotel provided a lot of security and best service in tough goan social life. Food was really awsumm. Chef is best. People(staffs) were very polite and welcoming. And yes amenities were perfect and they were alot. Gymming area, play area, laptop desk with charger. Play area for kids. Car bike parking area. Lot of amenities were taken care of. Thank you ginger for making our stay sweet and happy.</p>
+                            </div>
+                            <div class="guest-review-bx">
+                                <h4>Best hotel in dubai</h4>
+                                <h5>Rated <span>4.0</span> by <b>Somya Martand</b>, Nov 10, 2019</h5>
+                                <p>The hotel provided a lot of security and best service in tough goan social life. Food was really awsumm. Chef is best. People(staffs) were very polite and welcoming. And yes amenities were perfect and they were alot. Gymming area, play area, laptop desk with charger. Play area for kids. Car bike parking area. Lot of amenities were taken care of. Thank you ginger for making our stay sweet and happy.</p>
+                                <img src="image/dummy-hotel.png" alt="">
+                                <img src="image/dummy-room.png" alt="">
+                            </div>
+                            <div class="guest-review-bx">
+                                <h4>Best hotel in dubai</h4>
+                                <h5>Rated <span>4.0</span> by <b>Somya Martand</b>, Nov 10, 2019</h5>
+                                <p>The hotel provided a lot of security and best service in tough goan social life. Food was really awsumm. Chef is best. People(staffs) were very polite and welcoming. And yes amenities were perfect and they were alot. Gymming area, play area, laptop desk with charger. Play area for kids. Car bike parking area. Lot of amenities were taken care of. Thank you ginger for making our stay sweet and happy.</p>
+                            </div>
+                            <a href="#" class="load-more-rev-btn">Load More Review <i class="fa-solid fa-arrow-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="download-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center down-text">
+                        <div class="download-txt">
+                            <h5>Download Now !</h5>
+                            <h2>Rehlte Application</h2>
+                            <p>Enjoy the best exclusive offers and collect rehlte travel points
+                                to get more discount...</p>
+                        </div>
+                        <div class="qr-download d-flex align-items-center">
+                            <img src="image/qrcode.png" alt="">
+                            <div class="scan-txt ms-3">
+                                <p>Scan this QR code for</p>
+                                <span>Download The App</span>
+                            </div>
+                        </div>
+                        <div class="marketplace-download mt-3">
+                            <ul class="ps-0 d-flex align-items-center">
+                                <li>
+                                    <a href="#">
+                                        <img src="image/playstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appgallary.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="download-app-img">
+                        <img class="w-full ltr-dir-img" src="image/download-rehlte.png" alt="">
+                        <img class="w-full rtl-dir-img" src="image/download-rehlte-rtl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>About Rehlte</h5>
+                        <p>about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty</p>
+                        <a href="#" class="read-more-btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-xs-12">
+                    <div class="footer-cont footer-links">
+                        <h5>Quick links</h5>
+                        <div class="bottom-site-urls">
+                            <ul>
+                                <li>
+                                    <a href="#">Spcial Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Summer Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Bridal Shows
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Explore Destinations
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                              <li>
+                                  <a href="terms-condition.html">Terms & Conditions
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="privacy-policy.html">Privacy Policy
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="faq.html">FAQ
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="about-us.html">About Us
+                                  </a>
+                              </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont social-links">
+                        <h5>Follow us on</h5>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="image/social/snapchat.svg" alt="">Snapchat</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/twitter.svg" alt="">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/google.svg" alt="">Google</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/facebook.svg" alt="">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>Instagram</h5>
+                        <div class="insta-posts">
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights-footer">
+        <p>Copyright © 2023 .All rights reserved by <a href="#">Rehlte</a>. Designed by <a
+                href="https://www.amarinfotech.com/" target="_blank">Amar Infotech</a></p>
+    </div>
+
+    <!-- filter-popup -->
+    <div class="mobile-filter-pop">
+
+    </div>
+
+    <div class="go-top"></div>
+
+    <!-- Login & create account popup -->
+    <!-- Modal -->
+    <!-- login popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Sign in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Continue with</h5>
+                    <div class="login-tabs">
+                        <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1-login" data-bs-toggle="tab"
+                                    href="#ex1-tabs-1-login" role="tab" aria-controls="ex1-tabs-1-login"
+                                    aria-selected="true">Mobile number</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2-login" data-bs-toggle="tab" href="#ex1-tabs-2-login"
+                                    role="tab" aria-controls="ex1-tabs-2-login" aria-selected="false">E-mail</a>
+                            </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-login">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1-login" role="tabpanel"
+                                aria-labelledby="ex1-tab-1-login">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control mobile_code" id="mobile_code"
+                                            placeholder="Mobile number *" name="number" required>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-btn">
+                                        <button>Sign in</button>
+                                    </div>
+                                </form>
+                                <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Forgot your password ?</a>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2-login" role="tabpanel"
+                                aria-labelledby="ex1-tab-2-login">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address *</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-btn">
+                                        <button>Sign in</button>
+                                    </div>
+                                </form>
+                                <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Forgot your password ?</a>
+                            </div>
+                            <div class="other-login-opts">
+                                <span>OR</span>
+                            </div>
+                            <div class="social-media-logins mb-4">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/apple-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/google-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/twitter.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/instagram.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/facebook.svg"
+                                                alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span>Don't have account? <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Create a new account</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- singup popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle2" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Create New Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Continue with</h5>
+                    <div class="login-tabs">
+                        <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1-register" data-bs-toggle="tab"
+                                    href="#ex1-tabs-1-register" role="tab" aria-controls="ex1-tabs-1-register"
+                                    aria-selected="true">Mobile number</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2-register" data-bs-toggle="tab"
+                                    href="#ex1-tabs-2-register" role="tab" aria-controls="ex1-tabs-2-register"
+                                    aria-selected="false">E-mail</a>
+                            </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-register">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1-register" role="tabpanel"
+                                aria-labelledby="ex1-tab-1-register">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control mobile_code" id="mobile_code"
+                                            placeholder="Mobile number *" name="number" required>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="create-account-note">The password must be composed of letters or numbers,
+                                        in Latin letters so that it includes uppercase and lowercase letters</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2-register" role="tabpanel"
+                                aria-labelledby="ex1-tab-2-register">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address *</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="create-account-note">The password must be composed of letters or numbers,
+                                        in Latin letters so that it includes uppercase and lowercase letters</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="other-login-opts mt-5">
+                                <span>OR</span>
+                            </div>
+                            <div class="social-media-logins mb-4">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/apple-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/google-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/twitter.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/instagram.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/facebook.svg"
+                                                alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span>Have Account ? <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forgot pass popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle3" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Forgot Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Reset Password using</h5>
+                    <div class="login-tabs forgot-pass-filds">
+                        <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1-forgot" data-bs-toggle="tab"
+                                    href="#ex1-tabs-1-forgot" role="tab" aria-controls="ex1-tabs-1-forgot"
+                                    aria-selected="true">Mobile number</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2-forgot" data-bs-toggle="tab" href="#ex1-tabs-2-forgot"
+                                    role="tab" aria-controls="ex1-tabs-2-forgot" aria-selected="false">E-mail</a>
+                            </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-forgot">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1-forgot" role="tabpanel"
+                                aria-labelledby="ex1-tab-1-forgot">
+                                <form class="mb-3" action="">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control mobile_code" id="mobile_code"
+                                            placeholder="Mobile number *" name="number" required>
+                                    </div>
+                                    <p class="create-account-note">Please enter the mobile number that was
+                                        used to create your Rehlaty account</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2-forgot" role="tabpanel"
+                                aria-labelledby="ex1-tab-2-forgot">
+                                <form class="mb-3" action="">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address *</label>
+                                    </div>
+                                    <p class="create-account-note">Please enter the email-id that was
+                                        used to create your Rehlaty account</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <span>Remember Password ? <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- otp-sent -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle4" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="successfully-sent-otp">
+                        <lord-icon src="https://cdn.lordicon.com/yqzmiobz.json" trigger="loop" delay="500"
+                            colors="primary:#44d97f" style="width:150px;height:150px">
+                        </lord-icon>
+                        <!-- <img src="image/right-tick.gif" width="150" height="150" alt=""> -->
+                        <h4>The activation code has been sent
+                            to the Mobile Number</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- enter otp popup-->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle5" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Enter OTP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-tabs forgot-pass-filds">
+                        <form class="mb-3" action="">
+                            <div class="form-floating otp-inputs mb-4 mt-4">
+                                <input id="otp-first" type="number" min="0" max="9" step="1" aria-label="first digit" />
+                                <input id="otp-second" type="number" min="0" max="9" step="1"
+                                    aria-label="second digit" />
+                                <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="third digit" />
+                                <input id="otp-fourth" type="number" min="0" max="9" step="1"
+                                    aria-label="fourth digit" />
+                                <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="five digit" />
+                                <input id="otp-fourth" type="number" min="0" max="9" step="1" aria-label="six digit" />
+                            </div>
+                            <p class="create-account-note">Please enter the OTP we have shared on <br> <b>+91
+                                    12345667890</b></p>
+                        </form>
+                        <div class="sign-in-btn">
+                            <button data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- set new password -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle6" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Set New Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-tabs forgot-pass-filds">
+                        <div class="set-new-pass">
+                            <form action="">
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword"
+                                        placeholder="Password" required>
+                                    <label for="floatingPassword">New Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword"
+                                        placeholder="Password" required>
+                                    <label for="floatingPassword">Confirm Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="create-account-note mt-3">The password must be composed of letters or numbers,
+                                    in Latin letters so that it includes uppercase and lowercase letters</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src='js/main.js'></script>
+
+    <script>
+        // lightbox js
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            width: "90vw",
+            height: "90vh"
+        });
+    </script>
+    <div class="top-right">
+        <div class="top-right-content">
+            <div class="left-side">
+                <h4>Download Our App To Get <br> More Feature !</h4>
+            </div>
+            <div class="center-side">
+                <button>Download Now</button>
+            </div>
+            <div class="right-side">
+                <button  id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+            </div>
+        </div>
+    </div>
+    <script>
+          $(document).ready(function(){
+            $("div").click(function(){
+             $(".top-right").fadeOut(200);
+                });
+            });
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rehlte - Travel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
+    <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' id="ltr_css" media='screen' href='css/responsive-en.css'>
+    <link rel="stylesheet" href="css/booking.css">
+    <!-- DHAVAL (START) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <!-- DHAVAL (WND) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="overlayDoor"></div>
+        <div class="overlayContent">
+            <img src="image/loader.svg" alt="">
+        </div>
+    </div>
+
+    <div class="main-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <div class="mob-menu-content">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="image/logo.svg" class="header-logo" alt="logo">
+                            </a>
+                        </div>
+                        <div class="side-menu-mobile">
+                            <div class="menu-button__wrapper">
+                                <div class="menu-button">
+                                    <span class="menu-button__bar"></span>
+                                    <span class="menu-button__bar"></span>
+                                    <span class="menu-button__bar"></span>
+                                </div>
+                            </div>
+                            <div class="menu-overlay">
+                                <nav class="nav">
+                                    <a class="nav__item" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-user"></i>Profile</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-ticket"></i>Bookings</a>
+                                </nav>
+                                <nav class="nav">
+                                    <a class="nav__item" href="index.html"><i class="fa-solid fa-plane"></i>Flights</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-hotel"></i>Hotels</a>
+                                </nav>
+                                <nav class="nav">
+                                    <a class="nav__item" href="index.html"><i class="fa-solid fa-language"></i>Change
+                                        languge</a>
+                                    <a class="nav__item" href="#"><i class="fa-solid fa-dollar-sign"></i>Currency</a>
+                                    <a class="nav__item" href="#v-pills-messages"><img src="image/my-profile/faq.svg"
+                                            alt="">FAQ</a>
+                                    <a class="nav__item" href="#v-pills-privacy"><img
+                                            src="image/my-profile/privacy-policy.svg" alt="">Privacy Policy</a>
+                                    <a class="nav__item" href="#v-pills-condition"><img
+                                            src="image/my-profile/terms-condition.svg" alt="">Terms & Conditions</a>
+                                    <a class="nav__item" href="#v-pills-settings"><img
+                                            src="image/my-profile/about-us.svg" alt="">About Us</a>
+                                </nav>
+                            </div>
+                            <div class="background-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="side-menu-opts">
+                        <!-- <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="image/flight.svg" width="25" height="25" alt="flight-menu">
+                                        flight</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/hotel.svg" width="25" height="25"
+                                            alt="hotel-menu">hotels</a>
+                                </li>
+                            </ul>
+                        </div> -->
+                        <div class="user-menu">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank"><img src="image/wp.svg" width="30" height="30"
+                                            alt="">920022222</a>
+                                </li>
+                                <li>
+                                    <select id="selectbox1">
+                                        <option value="">SAR</option>
+                                        <option value="aye">INR</option>
+                                        <option value="eh">USD</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="image/wallet.svg" width="20" height="20" alt="">my points</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#"><img src="image/user.svg" width="20" height="20" alt="">Abdelsalam</a>
+                                </li> -->
+                                <li>
+                                    <a data-bs-toggle="modal" href="#exampleModalToggle" role="button"><img
+                                            src="image/user.svg" width="20" height="20" alt="">Sign In</a>
+                                </li>
+                                <li class="me-0">
+                                    <div class="switches-container">
+                                        <input type="radio" id="ar" name="lang" value="ar" />
+                                        <input type="radio" id="en" name="lang" value="en" checked="checked" />
+                                        <label for="ar" class="arabic-txt">ع</label>
+                                        <label for="en">En</label>
+                                        <div class="switch-wrapper">
+                                            <div class="switch">
+                                                <div class="arabic-txt">ع</div>
+                                                <div>En</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-profile-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="profile-links">
+                        <div class="profile-img-dtls">
+                            <div class="profile-image-bx">
+                                <img id="selectedImage" src="image/dummy-profile.svg" alt="">
+                                <!-- <span id="openPopup"><i class="fa-solid fa-pen-to-square"></i></span> -->
+                            </div>
+
+                            <!-- <div id="imagePopup" class="popup">
+                            <div class="popup-content">
+                                <input type="file" id="imageInput" accept="image/*">
+                                <div class="cropper-container">
+                                    <img id="popupImage" src="" alt="">
+                                </div>
+                                <button id="saveButton">Save</button>
+                                <span id="closePopup">&times;</span>
+                            </div>
+                        </div> -->
+
+                            <h5>Hi Mr. Abdelsalam Aly</h5>
+                            <p>aaaaaaaaaaa@gmail.com</p>
+                        </div>
+                        <div class="bottom-white-part">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+
+                                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-profile" type="button" role="tab"
+                                    aria-controls="v-pills-profile" aria-selected="true"><img
+                                        src="image/my-profile/profile.svg" alt="">Profile</button>
+
+                                <button class="nav-link" id="v-pills-password-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-password" type="button" role="tab"
+                                    aria-controls="v-pills-password" aria-selected="false"><img
+                                        src="image/my-profile/password.svg" alt="">Password</button>
+
+                                <button class="nav-link active" id="v-pills-Travelers-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-Travelers" type="button" role="tab"
+                                    aria-controls="v-pills-Travelers" aria-selected="false"><img
+                                        src="image/my-profile/travelers.svg" alt="">Travelers</button>
+
+                                <button class="nav-link" id="v-pills-booking-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-booking" type="button" role="tab" aria-controls="v-pills-booking"
+                                    aria-selected="true"><img src="image/my-profile/bookings.svg"
+                                        alt="">Bookings</button>
+
+                                <button class="nav-link" id="v-pills-fav-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-fav" type="button" role="tab"
+                                    aria-controls="v-pills-fav" aria-selected="false"><img
+                                        src="image/my-profile/favorites.svg" alt="">Favorites</button>
+                                        
+                                <button class="nav-link" id="v-pills-points-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-points" type="button" role="tab"
+                                aria-controls="v-pills-points" aria-selected="false"><img
+                                    src="image/my-profile/pointssss.svg" alt="">My Points</button>
+                                        
+
+                                <button class="nav-link" id="v-pills-contact-agent-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-contact-agent" type="button" role="tab"
+                                    aria-controls="v-pills-contact-agent" aria-selected="false"><img
+                                        src="image/my-profile/contact-agent.svg" alt="">Contact an agent</button>
+
+                            </div>
+                            <div class="basic-info-profile">
+                                <h5>What benefits will you get by creating a new account?</h5>
+                                <p>You can learn about our exclusive offers, save traveler
+                                    information, manage my future reservations and much <a href="#">more here</a></p>
+                            </div>
+                            <div class="profile-last-part">
+                                <button>Sign In</button>
+                                <p>Don't have account? <a href="#">Create a new account</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="profile-main-content tab-content" id="v-pills-tabContent">
+
+                        <div class="tab-pane fade " id="v-pills-profile" role="tabpanel"
+                            aria-labelledby="v-pills-profile-tab">
+                            <div class="profile-tab-title">
+                                <img src="image/my-profile/profile.svg" alt="">
+                                <h4>Profile</h4>
+                            </div>
+
+
+                            <!-- new code for croping img -->
+                            <div class="select-img my-3">
+                                <div class="row d-flex justify-content-center align-items-center ">
+                                    <div class="col-6">
+                                        <div class="click-text" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                            <p>Click Here to selcet Your Image</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center ">
+                                        <div class="image-seen"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- crop-modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 ">
+                                            <h5 class="modal-title" id="exampleModalLabel">Upload Your Profile Images
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body border-0  text-center">
+                                            <button type="button" class="choose-file-btn" id="chooseFileBtn">Choose
+                                                File</button>
+                                            <!-- Hidden file input -->
+                                            <input type="file" id="fileInput" style="display: none;">
+                                            <!-- Container to display selected image -->
+                                            <div class="image-seeeeen">
+                                                <img src="" alt="Selected Image" id="selectedImageone"
+                                                class="img-fluid choicimg">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer border-0 ">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="profile-detls-list">
+                                <div class="row gy-3 gx-2">
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            <select name="" id="">
+                                                <option value="">Mr.</option>
+                                                <option value="">Mrs.</option>
+                                                <option value="">Miss.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="First Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Last Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="ISD Code*">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Mobile Number *">
+                                            <span class="do-verify"><i class="fa-regular fa-face-smile px-1"></i>Verified Number</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Email Id *">
+                                            <span class="do-not-verify"><i class="fa-regular fa-face-frown px-1"></i>Verify Email</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Date of birth *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            <select name="" id="">
+                                                <option value="">Male</option>
+                                                <option value="">Female</option>
+                                                <option value="">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            <select name="" id="">
+                                                <option value="">Married</option>
+                                                <option value="">Single</option>
+                                                <option value="">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Marriage Aniversary Date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5>Address Information</h5>
+                                <div class="row gy-3 gx-2">
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <select name="" id="" required>
+                                                <option value="">India</option>
+                                                <option value="">United States</option>
+                                                <option value="">Japan</option>
+                                                <option value="">Russia</option>
+                                                <option value="">Germany</option>
+                                                <option value="">Qatar</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <select name="" id="" required>
+                                                <option value="">Andhra Pradesh</option>
+                                                <option value="">Bihar</option>
+                                                <option value="">Assam</option>
+                                                <option value="">North Carolina</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <select name="" id="" required>
+                                                <option value="">Ahmedabad</option>
+                                                <option value="">Baroda</option>
+                                                <option value="">Jamnagar</option>
+                                                <option value="">Mumbai</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Zip Code *" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <textarea name="" id="" rows="10" placeholder="Address 1 *"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-inputs">
+                                            <textarea name="" id="" rows="10" placeholder="Address 2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="save-prof-btn-nam">
+                                    <button class="save-profile-btn">Save Changes</button>
+                                    <a href="#">Delete Account</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-password" role="tabpanel"
+                            aria-labelledby="v-pills-password-tab">
+                            <div class="profile-tab-title">
+                                <img src="image/my-profile/password.svg" alt="">
+                                <h4>Password</h4>
+                            </div>
+                            <div class="reset-password-profile">
+                                <div class="row gx-2">
+                                    <div class="col-md-4 my-1">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Current Password *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 my-1">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="New Password *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 my-1">
+                                        <div class="form-inputs">
+                                            <input type="text" placeholder="Confirm New Password *">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <span>Note: </span>
+                                    Password must be at least 8 characters long, and be in. Latin letters including a
+                                    capital letter and a number
+                                </p>
+                            </div>
+                            <div class="reset-pass-using-mob">
+                                <!-- <div class="login-tabs">
+                                    <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link active"
+                                            id="ex1-tab-1-login"
+                                            data-bs-toggle="tab"
+                                            href="#ex1-tabs-1-login"
+                                            role="tab"
+                                            aria-controls="ex1-tabs-1-login"
+                                            aria-selected="true"
+                                            >Mobile number</a
+                                        >
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <a
+                                            class="nav-link"
+                                            id="ex1-tab-2-login"
+                                            data-bs-toggle="tab"
+                                            href="#ex1-tabs-2-login"
+                                            role="tab"
+                                            aria-controls="ex1-tabs-2-login"
+                                            aria-selected="false"
+                                            >E-mail</a
+                                        >
+                                        </li>
+                                    </ul>
+                                    <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-login">
+                                        <div
+                                        class="tab-pane fade show active"
+                                        id="ex1-tabs-1-login"
+                                        role="tabpanel"
+                                        aria-labelledby="ex1-tab-1-login"
+                                        >
+                                        <form action="">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control mobile_code" id="mobile_code" placeholder="Mobile number *" name="number" required>
+                                            </div>
+                                            <div class="sign-in-btn">
+                                                <button>Sign in</button>
+                                            </div>
+                                        </form>
+                                        </div>
+                                        <div class="tab-pane fade" id="ex1-tabs-2-login" role="tabpanel" aria-labelledby="ex1-tab-2-login">
+                                            <form action="">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                                    <label for="floatingInput">Email address *</label>
+                                                </div>
+                                                <div class="form-floating mt-2">
+                                                    <input type="password" class="form-control floatingPassword" id="floatingPassword" placeholder="Password" required>
+                                                    <label for="floatingPassword">Password</label>
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text" onclick="password_show_hide();">
+                                                        <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                        <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="sign-in-btn">
+                                                    <button>Sign in</button>
+                                                </div>
+                                            </form>
+                                            <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" data-bs-dismiss="modal">Forgot your password ?</a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                              
+
+                                <div class="sign-in-btn-new">
+                                    <button id="open-modal-btn" data-bs-toggle="modal" data-bs-dismiss="modal"
+                                        data-bs-target="#change-password">Change Password</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade active show " id="v-pills-Travelers" role="tabpanel"
+                        aria-labelledby="v-pills-Travelers-tab">
+                        <div class="profile-tab-title">
+                            <div class="out-side" id="goToNewHtml" >
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <h4>Add Travelers</h4>
+
+                            
+
+                        </div>
+
+                        <!-- add travler new division -->
+                        <div class="add-new-traveler">
+                            <div class="profile-detls-list">
+                                <div class="row gy-3 gx-2">
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Title
+                                            <select name="" id="">
+                                                <option value="">Title</option>
+                                                <option value="">Mr.</option>
+                                                <option value="">Mrs.</option>
+                                                <option value="">Miss.</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            First Name
+                                            <input type="text" placeholder="First Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Second Name
+                                            <input type="text" placeholder="Second Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Last Name
+                                            <input type="text" placeholder="Last Name *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Date Of Birth
+                                            <input type="text" placeholder="Date of birth *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Gender
+                                            <select name="" id="">
+                                                <option value="">Gender</option>
+                                                <option value="">Male</option>
+                                                <option value="">Female</option>
+                                                <option value="">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Nationality
+                                            <select name="" id="">
+                                                <option value="">United Arab Emirates</option>
+                                                <option value="">India</option>
+                                                <option value="">Iran</option>
+                                                <option value="">Japan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Id Type
+                                            <select name="" id="">
+                                                <option value="">Id Type</option>
+                                                <option value="">Passport</option>
+                                                <option value="">National ID</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            ID Number
+                                            <input type="text" placeholder="ID Number *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Issue Date
+                                            <input type="text" placeholder="Issue Date *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Expiry Date
+                                            <input type="text" placeholder="Expiry Date *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-inputs">
+                                            Issue Country
+                                            <select name="" id="">
+                                                <option value="">United Arab Emirates</option>
+                                                <option value="">India</option>
+                                                <option value="">Japan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        Upload Document
+                                        <input type="file" accept=".jpg, .jpeg, .png" onchange="displayImage(this)">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="tra-new-img" id="imageContainer"></div>
+                                    </div>
+                                </div>
+                                <div class="add-new-tra-btn">
+                                    <button class="add-new-tra-save" >Save</button>
+                                    <button class="add-new-tra-cancel" >Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      
+                        
+
+
+
+                        
+
+                        </div>
+                        
+                        <div class="tab-pane fade" id="v-pills-booking" role="tabpanel" aria-labelledby="v-pills-booking-tab">
+                            <div class="profile-tab-title">
+                                <img src="image/my-profile/bookings.svg" alt="">
+                                <h4>Booking</h4>
+                            </div>
+
+                            <!-- booking content  -->
+                           <div class="first-ticket-Confirmed" id="first-confirmed" >
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="next-trip-ticket-new m-auto">
+                                            <div class="airline-name-new d-flex align-items-center justify-content-center">
+                                                <img src="image/search/airline.svg" width="20" height="20" alt="dummy-airline">
+                                                <!-- <span>Vistara</span> -->
+                                            </div>
+                                            <div class="flight-city-dtls d-flex align-items-center justify-content-center">
+                                                <div class="from-city-name-ticket-new pb-4">
+                                                    <h4>AHM</h4>
+                                                    <span>Ahmedabad, India</span>
+                                                    <span>April 23, 2023</span>
+                                                </div>
+                                                <div class="airline-icon-dcs-new">
+                                                    <div class="flight-major-dtls-new-new-new">
+                                                        <p>2H 15M</p>
+                                                        <p>Direct Flight</p>
+                                                    </div>
+                                                    <div class="new-aero">
+                                                    </div>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
+                                                            <g clip-path="url(#clip0_27_150)">
+                                                              <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                                            </g>
+                                                            <defs>
+                                                              <clipPath id="clip0_27_150">
+                                                                <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                                              </clipPath>
+                                                            </defs>
+                                                          </svg>
+                                                    </span>
+                                                    <h6>One-way</h6>
+                                                    <div class="booking-status-new booking-success-new">
+                                                        Confirmed Booking
+                                                    </div>
+                                                </div>
+                                                <div class="to-city-name-ticket-new pb-4">
+                                                    <h4>Sin</h4>
+                                                    <span>Singapore, Changi</span>
+                                                    <span>April 24, 2023</span>
+                                                </div>
+                                            </div>
+                                            <div class="booking-update position-relative">
+                                                <div class="booking-status-brdr"></div>
+                                            </div>
+                                            <div class="ticket-number-dtls-new">
+                                                <div class="tick-book-dtls-new">
+                                                    <p>Your booking No. With Rehlty</p>
+                                                    <span>0000001</span>
+                                                </div>
+                                                <div class="tick-book-dtls-new">
+                                                    <p>Airline reference number</p>
+                                                    <span>ML0000</span>
+                                                </div>
+                                            </div>
+                                            
+                                        
+                                        </div>
+                                        <!-- collapse book - one -->
+                                        <!-- <div class="collapse col-same show" id="collapseExample-book-first">
+                                            <div class="card  col-book-one card-body">
+                                                <div class="col-first">
+                                                    <h5><span><i class="fa-solid fa-plane ps-2 pe-"></i></span> Ahemdabad - New York</h5>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                        
+                                       
+                                    </div>
+                                </div>
+                           </div>
+
+                          
+                           <div class="first-ticket-pending mt-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="next-trip-ticket-new m-auto">
+                                        <div class="airline-name-new d-flex align-items-center justify-content-center">
+                                            <img src="image/search/airline.svg" width="20" height="20" alt="dummy-airline">
+                                            <!-- <span>Vistara</span> -->
+                                        </div>
+                                        <div class="flight-city-dtls d-flex align-items-center justify-content-center">
+                                            <div class="from-city-name-ticket-new pb-4">
+                                                <h4>AHM</h4>
+                                                <span>Ahmedabad, India</span>
+                                                <span>April 23, 2023</span>
+                                            </div>
+                                            <div class="airline-icon-dcs">
+                                                <div class="flight-major-dtls-new-new-new">
+                                                    <p>2H 15M</p>
+                                                    <p>Direct Flight</p>
+                                                </div>
+                                                <div class="new-aero">
+                                                </div>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
+                                                        <g clip-path="url(#clip0_27_150)">
+                                                          <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                                        </g>
+                                                        <defs>
+                                                          <clipPath id="clip0_27_150">
+                                                            <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                                          </clipPath>
+                                                        </defs>
+                                                      </svg>
+                                                </span>
+                                                <h6>One-way</h6>
+                                                <div class="booking-status-new-pending booking-success-new-pending">
+                                                    Pending Booking
+                                                </div>
+                                            </div>
+                                            <div class="to-city-name-ticket-new pb-4">
+                                                <h4>Sin</h4>
+                                                <span>Singapore, Changi</span>
+                                                <span>April 24, 2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="booking-update position-relative">
+                                            <div class="booking-status-brdr"></div>
+                                        </div>
+                                        <div class="ticket-number-dtls-new">
+                                            <div class="tick-book-dtls-new">
+                                                <p>Your booking No. With Rehlty</p>
+                                                <span>0000001</span>
+                                            </div>
+                                            <div class="tick-book-dtls-new">
+                                                <p>Airline reference number</p>
+                                                <span>ML0000</span>
+                                            </div>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                    <!-- collapse book - one -->
+                                    <!-- <div class="collapse col-same show" id="collapseExample-book-first">
+                                        <div class="card  col-book-one card-body">
+                                            <div class="col-first">
+                                                <h5><span><i class="fa-solid fa-plane ps-2 pe-"></i></span> Ahemdabad - New York</h5>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                    
+                                   
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="first-ticket-cancling mt-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="next-trip-ticket-new m-auto">
+                                        <div class="airline-name-new d-flex align-items-center justify-content-center">
+                                            <img src="image/search/airline.svg" width="20" height="20" alt="dummy-airline">
+                                            <!-- <span>Vistara</span> -->
+                                        </div>
+                                        <div class="flight-city-dtls d-flex align-items-center justify-content-center">
+                                            <div class="from-city-name-ticket-new pb-4">
+                                                <h4>AHM</h4>
+                                                <span>Ahmedabad, India</span>
+                                                <span>April 23, 2023</span>
+                                            </div>
+                                            <div class="airline-icon-dcs">
+                                                <div class="flight-major-dtls-new-new-new">
+                                                    <p>2H 15M</p>
+                                                    <p>Direct Flight</p>
+                                                </div>
+                                                <div class="new-aero">
+                                                </div>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
+                                                        <g clip-path="url(#clip0_27_150)">
+                                                          <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                                        </g>
+                                                        <defs>
+                                                          <clipPath id="clip0_27_150">
+                                                            <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                                          </clipPath>
+                                                        </defs>
+                                                      </svg>
+                                                </span>
+                                                <h6>One-way</h6>
+                                                <div class="booking-status-new-cancelling booking-success-new-cancelling">
+                                                    Cancel Booking
+                                                </div>
+                                            </div>
+                                            <div class="to-city-name-ticket-new pb-4">
+                                                <h4>Sin</h4>
+                                                <span>Singapore, Changi</span>
+                                                <span>April 24, 2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="booking-update position-relative">
+                                            <div class="booking-status-brdr"></div>
+                                        </div>
+                                        <div class="ticket-number-dtls-new">
+                                            <div class="tick-book-dtls-new">
+                                                <p>Your booking No. With Rehlty</p>
+                                                <span>0000001</span>
+                                            </div>
+                                            <div class="tick-book-dtls-new">
+                                                <p>Airline reference number</p>
+                                                <span>ML0000</span>
+                                            </div>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                    <!-- collapse book - one -->
+                                    <!-- <div class="collapse col-same show" id="collapseExample-book-first">
+                                        <div class="card  col-book-one card-body">
+                                            <div class="col-first">
+                                                <h5><span><i class="fa-solid fa-plane ps-2 pe-"></i></span> Ahemdabad - New York</h5>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                    
+                                   
+                                </div>
+                            </div>
+                           </div>
+
+                           <div class="first-ticket-completing mt-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="next-trip-ticket-new m-auto">
+                                        <div class="airline-name-new  d-flex align-items-center justify-content-center">
+                                            <img class="gry-img" src="image/search/airline.svg" width="20" height="20" alt="dummy-airline">
+                                            <!-- <span>Vistara</span> -->
+                                        </div>
+                                        <div class="flight-city-dtls d-flex align-items-center justify-content-center">
+                                            <div class="from-city-name-ticket-new  pb-4">
+                                                <h4 class="gray-text"  >AHM</h4>
+                                                <span class="gray-text" >Ahmedabad, India</span>
+                                                <span class="gray-text" >April 23, 2023</span>
+                                            </div>
+                                            <div class="airline-icon-dcs">
+                                                <div class="flight-major-dtls-new-new-new">
+                                                    <p>2H 15M</p>
+                                                    <p>Direct Flight</p>
+                                                </div>
+                                                <div class="gray-aero">
+                                                </div>
+                                                <span class="only-gray-box" >
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="#fff">
+                                                        <g clip-path="url(#clip0_27_150)">
+                                                          <path d="M3.20832 7.4375L4.58332 7.4375L5.95832 9.1875L11 9.1875L8.70832 1.75L10.5417 1.75L15.125 9.1875L20.1667 9.1875C20.5486 9.1875 20.8734 9.31525 21.1411 9.57075C21.4087 9.82625 21.5423 10.136 21.5417 10.5C21.5417 10.8646 21.4078 11.1746 21.1402 11.4301C20.8725 11.6856 20.548 11.8131 20.1667 11.8125L15.125 11.8125L10.5417 19.25L8.70832 19.25L11 11.8125L5.95832 11.8125L4.58332 13.5625L3.20832 13.5625L4.12499 10.5L3.20832 7.4375Z" fill="#BBBBBB"></path>
+                                                        </g>
+                                                        <defs>
+                                                          <clipPath id="clip0_27_150">
+                                                            <rect width="21" height="22" fill="white" transform="translate(22) rotate(90)"></rect>
+                                                          </clipPath>
+                                                        </defs>
+                                                      </svg>
+                                                </span>
+                                                <h6 class="gray-text" >One-way</h6>
+                                                <div class="booking-status-new-cancelling booking-success-new-cancelling gray-border gray-text">
+                                                    Trip Completed
+                                                </div>
+                                            </div>
+                                            <div class="to-city-name-ticket-new pb-4">
+                                                <h4 class="gray-text" >Sin</h4>
+                                                <span class="gray-text" >Singapore, Changi</span>
+                                                <span class="gray-text" >April 24, 2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="booking-update position-relative">
+                                            <div class="booking-status-brdr"></div>
+                                        </div>
+                                        <div class="ticket-number-dtls-new">
+                                            <div class="tick-book-dtls-new">
+                                                <p class="gray-text" >Your booking No. With Rehlty</p>
+                                                <span class="gray-text" >0000001</span>
+                                            </div>
+                                            <div class="tick-book-dtls-new">
+                                                <p class="gray-text" >Airline reference number</p>
+                                                <span class="gray-text" >ML0000</span>
+                                            </div>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                    <!-- collapse book - one -->
+                                    <!-- <div class="collapse col-same show" id="collapseExample-book-first">
+                                        <div class="card  col-book-one card-body">
+                                            <div class="col-first">
+                                                <h5><span><i class="fa-solid fa-plane ps-2 pe-"></i></span> Ahemdabad - New York</h5>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                    
+                                   
+                                </div>
+                            </div>
+                           </div>
+
+
+                          
+
+
+
+
+
+                            
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-fav" role="tabpanel"
+                        aria-labelledby="v-pills-fav-tab">
+                        <div class="profile-tab-title">
+                            <img src="image/my-profile/favorites.svg" alt="">
+                            <h4>Favorites</h4>
+                        </div>
+                        <div class="terms-condition-content">
+                            <h2>This is dummy h2 tag..........</h2>
+                            <p>Lorem ipsum, <a href="#"> dolor sit amet </a> consectetur adipisicing elit. Eveniet
+                                qui est voluptatibus veritatis eos aliquid perferendis adipisci iusto earum
+                                assumenda, illum eius sunt fuga, facere cupiditate officiis repudiandae natus nisi.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste ab sed,
+                                laboriosam facere vitae, quam dolorem adipisci praesentium commodi consectetur
+                                minima quis aperiam necessitatibus. Eos sed similique vel alias.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet qui est
+                                voluptatibus <b>veritatis eos aliquid perferendis </b> adipisci iusto earum
+                                assumenda, illum eius sunt fuga, facere cupiditate officiis repudiandae natus nisi.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste ab sed,
+                                laboriosam facere vitae, quam dolorem adipisci praesentium commodi consectetur
+                                minima quis aperiam necessitatibus. Eos sed similique vel alias.</p>
+                            <h3>This is dummy h3 tag</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet qui est
+                                voluptatibus veritatis eos aliquid perferendis adipisci iusto earum assumenda, illum
+                                eius sunt fuga, facere cupiditate officiis repudiandae natus nisi. Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Neque, iste ab sed, laboriosam facere vitae,
+                                quam dolorem adipisci praesentium commodi consectetur minima quis aperiam
+                                necessitatibus. Eos sed similique vel alias.</p>
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </li>
+                            </ul>
+                            <h4>This is dummy h4 tag</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet qui est
+                                voluptatibus veritatis eos aliquid perferendis adipisci iusto earum assumenda, illum
+                                eius sunt fuga, facere cupiditate officiis repudiandae natus nisi. Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Neque, iste ab sed, laboriosam facere vitae,
+                                quam dolorem adipisci praesentium commodi consectetur minima quis aperiam
+                                necessitatibus. Eos sed similique vel alias.</p>
+                        </div>
+                        </div>
+
+
+                        <div class="tab-pane fade" id="v-pills-points" role="tabpanel"
+                            aria-labelledby="v-pills-points-tab">
+                            <div class="profile-tab-title">
+                                <img src="image/my-profile/pointssss.svg" alt="">
+                                <h4>My Points</h4>
+                            </div>
+        
+                           
+                        </div>
+
+                        <div class="tab-pane fade" id="v-pills-contact-agent" role="tabpanel"
+                            aria-labelledby="v-pills-contact-agent-tab">
+                            <div class="profile-tab-title">
+                                <img src="image/my-profile/contact-agent.svg" alt="">
+                                <h4>Contact an agent</h4>
+                            </div>
+
+                            <!-- contact an agent form -->
+                            <div class="contact-agent">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-7">
+                                        <div class="agent-one">
+                                            <h4>Call the unified number</h4>
+                                            <h3>9200 22 222</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="agent-two">
+                                            <h4>or via WhatsApp</h4>
+                                            <img src="image/whatsapp.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-7">
+                                        <div class="agent-three">
+                                            <h5>Ask about</h5>
+                                            <div class="row">
+                                                <form action="#">
+                                                    <div class="col-12">
+                                                        <div class="form-inputs">
+                                                            <select name="" id="">
+                                                                <option value="">Flight</option>
+                                                                <option value="">Hotels</option>
+                                                                <option value="">Other</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-12 mt-3 mb-2">
+                                                        <div class="form-inputs">
+                                                            <textarea name="" id="" rows="4" placeholder="Writing text .."></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 my-2">
+                                                        <div class="form-inputs">
+                                                            <input type="text" placeholder="First Name *">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-lg-3 my-2">
+                                                            <div class="form-inputs">
+                                                                <input type="text" placeholder="Code *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-9 my-2">
+                                                            <div class="form-inputs">
+                                                                <input type="number" placeholder="Mobile Number *">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 my-2">
+                                                        <div class="form-inputs">
+                                                            <input type="text" placeholder="Email Id *">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="agent-four">
+                                            <button>Send</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="agent-five">
+                                            <img src="image/login/facebook.svg" alt="">
+                                            <img src="image/login/google-id.svg" alt="">
+                                            <img src="image/login/instagram.svg" alt="">
+                                            <img src="image/login/twitter.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                            
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="download-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center down-text">
+                        <div class="download-txt">
+                            <h5>Download Now !</h5>
+                            <h2>Rehlte Application</h2>
+                            <p>Enjoy the best exclusive offers and collect rehlte travel points
+                                to get more discount...</p>
+                        </div>
+                        <div class="qr-download d-flex align-items-center">
+                            <img src="image/qrcode.png" alt="">
+                            <div class="scan-txt ms-3">
+                                <p>Scan this QR code for</p>
+                                <span>Download The App</span>
+                            </div>
+                        </div>
+                        <div class="marketplace-download mt-3">
+                            <ul class="ps-0 d-flex align-items-center">
+                                <li>
+                                    <a href="#">
+                                        <img src="image/playstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appstore.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="image/appgallary.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="download-app-img">
+                        <img class="w-full ltr-dir-img" src="image/download-rehlte.png" alt="">
+                        <img class="w-full rtl-dir-img" src="image/download-rehlte-rtl.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>About Rehlte</h5>
+                        <p>about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty
+                            about Rehlty about Rehlty</p>
+                        <a href="#" class="read-more-btn">Read more</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-xs-12">
+                    <div class="footer-cont footer-links">
+                        <h5>Quick links</h5>
+                        <div class="bottom-site-urls">
+                            <ul>
+                                <li>
+                                    <a href="#">Spcial Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Summer Offers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Bridal Shows
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Explore Destinations
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="terms-condition.html">Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html">About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont social-links">
+                        <h5>Follow us on</h5>
+                        <ul>
+                            <li>
+                                <a href="#"><img src="image/social/snapchat.svg" alt="">Snapchat</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/twitter.svg" alt="">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/google.svg" alt="">Google</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="image/social/facebook.svg" alt="">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-xs-12">
+                    <div class="footer-cont">
+                        <h5>Instagram</h5>
+                        <div class="insta-posts">
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                            <span><img src="image/dummy-insta.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights-footer">
+        <p>Copyright © 2023 .All rights reserved by <a href="#">Rehlte</a>. Designed by <a
+                href="https://www.amarinfotech.com/" target="_blank">Amar Infotech</a></p>
+    </div>
+
+    <div class="go-top"></div>
+
+    <!-- Login & create account popup -->
+    <!-- Modal -->
+    <!-- login popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Sign in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Continue with</h5>
+                    <div class="login-tabs">
+                        <ul class="nav nav-tabs mb-3" id="ex3" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1-login" data-bs-toggle="tab"
+                                    href="#ex1-tabs-1-login" role="tab" aria-controls="ex1-tabs-1-login"
+                                    aria-selected="true">Mobile number</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2-login" data-bs-toggle="tab" href="#ex1-tabs-2-login"
+                                    role="tab" aria-controls="ex1-tabs-2-login" aria-selected="false">E-mail</a>
+                            </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-login">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1-login" role="tabpanel"
+                                aria-labelledby="ex1-tab-1-login">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control mobile_code" id="mobile_code"
+                                            placeholder="Mobile number *" name="number" required>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-btn">
+                                        <button>Sign in</button>
+                                    </div>
+                                </form>
+                                <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Forgot your password ?</a>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2-login" role="tabpanel"
+                                aria-labelledby="ex1-tab-2-login">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address *</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="sign-in-btn">
+                                        <button>Sign in</button>
+                                    </div>
+                                </form>
+                                <a data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Forgot your password ?</a>
+                            </div>
+                            <div class="other-login-opts">
+                                <span>OR</span>
+                            </div>
+                            <div class="social-media-logins mb-4">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/apple-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/google-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/twitter.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/instagram.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/facebook.svg"
+                                                alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span>Don't have account? <a data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Create a new account</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- singup popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle2" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Create New Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Continue with</h5>
+                    <div class="login-tabs">
+                        <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1-register" data-bs-toggle="tab"
+                                    href="#ex1-tabs-1-register" role="tab" aria-controls="ex1-tabs-1-register"
+                                    aria-selected="true">Mobile number</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2-register" data-bs-toggle="tab"
+                                    href="#ex1-tabs-2-register" role="tab" aria-controls="ex1-tabs-2-register"
+                                    aria-selected="false">E-mail</a>
+                            </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-register">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1-register" role="tabpanel"
+                                aria-labelledby="ex1-tab-1-register">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control mobile_code" id="mobile_code"
+                                            placeholder="Mobile number *" name="number" required>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="create-account-note">The password must be composed of letters or numbers,
+                                        in Latin letters so that it includes uppercase and lowercase letters</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2-register" role="tabpanel"
+                                aria-labelledby="ex1-tab-2-register">
+                                <form action="">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address *</label>
+                                    </div>
+                                    <div class="form-floating mt-2">
+                                        <input type="password" class="form-control floatingPassword"
+                                            id="floatingPassword" placeholder="Password" required>
+                                        <label for="floatingPassword">Password</label>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" onclick="password_show_hide();">
+                                                <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                                <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="create-account-note">The password must be composed of letters or numbers,
+                                        in Latin letters so that it includes uppercase and lowercase letters</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="other-login-opts mt-5">
+                                <span>OR</span>
+                            </div>
+                            <div class="social-media-logins mb-4">
+                                <ul class="mb-0">
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/apple-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/google-id.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/twitter.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/instagram.svg"
+                                                alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img width="35" height="35" src="image/login/facebook.svg"
+                                                alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span>Have Account ? <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forgot pass popup -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle3" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Forgot Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Reset Password using</h5>
+                    <div class="login-tabs forgot-pass-filds">
+                        <ul class="nav nav-tabs mb-3" id="ex4" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="ex1-tab-1-forgot" data-bs-toggle="tab"
+                                    href="#ex1-tabs-1-forgot" role="tab" aria-controls="ex1-tabs-1-forgot"
+                                    aria-selected="true">Mobile number</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="ex1-tab-2-forgot" data-bs-toggle="tab" href="#ex1-tabs-2-forgot"
+                                    role="tab" aria-controls="ex1-tabs-2-forgot" aria-selected="false">E-mail</a>
+                            </li>
+                        </ul>
+                        <div class="sign-in-popup-dtls tab-content mt-4" id="ex1-content-forgot">
+                            <div class="tab-pane fade show active" id="ex1-tabs-1-forgot" role="tabpanel"
+                                aria-labelledby="ex1-tab-1-forgot">
+                                <form class="mb-3" action="">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control mobile_code" id="mobile_code"
+                                            placeholder="Mobile number *" name="number" required>
+                                    </div>
+                                    <p class="create-account-note">Please enter the mobile number that was
+                                        used to create your Rehlaty account</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="ex1-tabs-2-forgot" role="tabpanel"
+                                aria-labelledby="ex1-tab-2-forgot">
+                                <form class="mb-3" action="">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address *</label>
+                                    </div>
+                                    <p class="create-account-note">Please enter the email-id that was
+                                        used to create your Rehlaty account</p>
+                                    <div class="sign-in-btn">
+                                        <button class="mt-0 reset-pass" data-bs-target="#exampleModalToggle4"
+                                            data-bs-toggle="modal" data-bs-dismiss="modal">Continue</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <span>Remember Password ? <a data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                                    data-bs-dismiss="modal">Sign In</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- otp-sent -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle4" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="successfully-sent-otp">
+                        <lord-icon src="https://cdn.lordicon.com/yqzmiobz.json" trigger="loop" delay="500"
+                            colors="primary:#44d97f" style="width:150px;height:150px">
+                        </lord-icon>
+                        <!-- <img src="image/right-tick.gif" width="150" height="150" alt=""> -->
+                        <h4>The activation code has been sent
+                            to the Mobile Number</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- enter otp popup-->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle5" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Enter OTP</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-tabs forgot-pass-filds">
+                        <form class="mb-3" action="">
+                            <div class="form-floating otp-inputs mb-4 mt-4">
+                                <input id="otp-first" type="number" min="0" max="9" step="1" aria-label="first digit" />
+                                <input id="otp-second" type="number" min="0" max="9" step="1"
+                                    aria-label="second digit" />
+                                <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="third digit" />
+                                <input id="otp-fourth" type="number" min="0" max="9" step="1"
+                                    aria-label="fourth digit" />
+                                <input id="otp-third" type="number" min="0" max="9" step="1" aria-label="five digit" />
+                                <input id="otp-fourth" type="number" min="0" max="9" step="1" aria-label="six digit" />
+                            </div>
+                            <p class="create-account-note">Please enter the OTP we have shared on <br> <b>+91
+                                    12345667890</b></p>
+                        </form>
+                        <div class="sign-in-btn">
+                            <button data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                                data-bs-dismiss="modal">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- set new password -->
+    <div class="modal fade login-rehlte-pop" id="exampleModalToggle6" data-bs-backdrop="static" data-bs-keyboard="false"
+        aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Set New Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-tabs forgot-pass-filds">
+                        <div class="set-new-pass">
+                            <form action="">
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword"
+                                        placeholder="Password" required>
+                                    const closePopupBtn = document.getElementById('closePopup');
+                                    <label for="floatingPassword">New Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-floating mt-2">
+                                    <input type="password" class="form-control floatingPassword" id="floatingPassword"
+                                        placeholder="Password" required>
+                                    <label for="floatingPassword">Confirm Password</label>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" onclick="password_show_hide();">
+                                            <i class="fas fa-eye show_eye" id="show_eye"></i>
+                                            <i class="fas fa-eye-slash d-none hide_eye" id="hide_eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="create-account-note mt-3">The password must be composed of letters or numbers,
+                                    in Latin letters so that it includes uppercase and lowercase letters</p>
+                                <div class="sign-in-btn">
+                                    <button class="mt-0">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="change-password" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <!-- add the new class name last-thankyou -->
+            <div class="modal-content last-change-password">
+                <div class="last-change-password-img">
+                    <img src="image/thankyou-img-confirm.png" alt="">
+                </div>
+                <div class="last-change-password-text">
+                    <h6>Your Password has been Successfully Chnaged</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- automatically open right top div when width is 575px  -->
+    <div class="top-right">
+        <div class="top-right-content">
+            <div class="left-side">
+                <h4>Download Our App To Get <br> More Feature !</h4>
+            </div>
+            <div class="center-side">
+                <button>Download Now</button>
+            </div>
+            <div class="right-side">
+                <button id="closeButton" type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- new script -->
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src='js/main.js'></script>
+
+    <!-- not mine -->
+    <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', function () {
+            const openPopupBtn = document.getElementById('openPopup');
+            const imageInput = document.getElementById('imageInput');
+            const popupImage = document.getElementById('popupImage');
+            const selectedImage = document.getElementById('selectedImage');
+            const saveButton = document.getElementById('saveButton');
+            const imagePopup = document.getElementById('imagePopup');
+
+            openPopupBtn.addEventListener('click', function () {
+                imagePopup.style.display = 'block';
+            });
+
+            closePopupBtn.addEventListener('click', function () {
+                imagePopup.style.display = 'none';
+            });
+
+            imageInput.addEventListener('change', function (e) {
+                const file = e.target.files[0];
+                const reader = new FileReader();
+
+                reader.onload = function (event) {
+                    popupImage.src = event.target.result;
+                    // You can initialize a cropper here if needed
+                };
+
+                reader.readAsDataURL(file);
+            });
+
+            saveButton.addEventListener('click', function () {
+                // Implement the logic to save the cropped image and update the profile image
+                selectedImage.src = getCroppedImage(); // Implement getCroppedImage function
+                imagePopup.style.display = 'none';
+            });
+
+            // You may need to initialize a cropper library here for image cropping functionality
+        });
+
+    </script>
+
+
+
+    <!-- add new travler profile image script -->
+    <script>
+        function displayImage(input) {
+            var imageContainer = document.getElementById('imageContainer');
+            
+            // Remove previous image (if any)
+            while (imageContainer.firstChild) {
+                imageContainer.removeChild(imageContainer.firstChild);
+            }
+    
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+    
+                reader.onload = function (e) {
+                    var img = document.createElement('img');
+                    img.src = e.target.result;
+                    imageContainer.appendChild(img);
+                };
+    
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+
+    <!-- Add Traveler back button script js -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the element with the specified class
+            var goToNewHtmlElement = document.getElementById('goToNewHtml');
+    
+            // Attach a click event listener to the element
+            goToNewHtmlElement.addEventListener('click', function() {
+                // Go to your new HTML file
+                window.location.href = 'my-profile.html';
+            });
+        });
+    </script>
+
+
+
+    <!-- pop-up menu for when screen width is 575px -->
+    <script>
+        $(document).ready(function () {
+            $("div").click(function () {
+                $(".top-right").fadeOut(200);
+            });
+        });
+
+
+    </script>
+
+
+    <!-- change password successfully  -->
+    <script>
+        $(document).ready(function () {
+            // Click event for the button
+            $('#open-modal-btn').on('click', function () {
+                // Show the modal
+                $('#change-password').modal('show');
+
+                // Hide the modal after 5 seconds
+                setTimeout(function () {
+                    $('#change-password').modal('hide');
+                }, 5000);
+            });
+        });
+    </script>
+
+
+
+<!-- are you sure delete this data for-first-table -->
+  
+
+<script>
+    $(document).ready(function () {
+        $("#staticBackdrop-one .del-yes").on("click", function () {
+            // Clear the content of the table cells within #col-one
+            $(".td-1").html("");
+        });
+    });
+
+    $(document).ready(function () {
+        $("#staticBackdrop-two .del-yes").on("click", function () {
+            // Clear the content of the table cells within #col-one
+            $(".td-2").html("");
+        });
+    });
+
+
+    $(document).ready(function () {
+        $("#staticBackdrop-three .del-yes").on("click", function () {
+            // Clear the content of the table cells within #col-one
+            $(".td-3").html("");
+        });
+    });
+
+    $(document).ready(function () {
+        $("#staticBackdrop-four .del-yes").on("click", function () {
+            // Clear the content of the table cells within #col-one
+            $(".td-4").html("");
+        });
+    });
+    
+   
+</script>
+
+
+<!-- booking details back button information -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the element with the specified class
+        var openNewFileElement = document.getElementById('first-confirmed');
+
+        // Attach a click event listener to the element
+        openNewFileElement.addEventListener('click', function() {
+            // Open the new HTML file
+            window.location.href = 'Booking-details.html';
+        });
+    });
+</script>
+
+
+
+<!-- script for croping-img 300 * 300 -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const chooseFileBtn = document.getElementById('chooseFileBtn');
+        const fileInput = document.getElementById('fileInput');
+        const selectedImageone = document.getElementById('selectedImageone');
+        const saveChangesBtn = document.createElement('button');
+        const imageSeenDiv = document.querySelector('.image-seen');
+
+        let cropper;
+
+        saveChangesBtn.className = 'btn btn-primary save-crop-btn';
+        saveChangesBtn.innerHTML = 'Save';
+        saveChangesBtn.addEventListener('click', function () {
+            if (cropper) {
+                // Get the cropped canvas data
+                const croppedCanvas = cropper.getCroppedCanvas({ width: 200, height: 200 });
+                // Display the cropped image in the 'image-seen' div
+                imageSeenDiv.innerHTML = `<img src="${croppedCanvas.toDataURL()}" alt="Cropped Image" class="img-fluid">`;
+                // Close the modal or perform other actions if needed
+                $('#staticBackdrop').modal('hide');
+            }
+        });
+
+        const modalFooter = document.querySelector('.modal-footer');
+        modalFooter.appendChild(saveChangesBtn);
+
+        chooseFileBtn.addEventListener('click', function () {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', function (event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // Display the full-size image in the modal
+                    selectedImageone.src = e.target.result;
+
+                    // If Cropper instance exists, destroy it before initializing a new one
+                    if (cropper) {
+                        cropper.destroy();
+                    }
+
+                    // Initialize Cropper.js with the full-size image
+                    cropper = new Cropper(selectedImageone, {
+                        aspectRatio: 1, // Set the aspect ratio for a square crop (300x300 pixels)
+                        viewMode: 1,    // Set the view mode to restrict the crop box to the container
+                        background: false, // Disable the dark background
+                    });
+                };
+
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+
+</script>
+
+    
+
+    
+
+
+</body>
+
+</html>

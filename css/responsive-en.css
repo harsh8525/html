@@ -1,0 +1,2286 @@
+@media only screen and (min-width:1990px) {
+    .home-banner {
+        overflow: hidden
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .date-option {
+        margin-right: 9px
+    }
+}
+
+@media only screen and (max-width:1380px) {
+    .about-us-content img {
+        height: 100%;
+        margin: 0;
+        object-fit: cover
+    }
+
+    .main-filters-opts .incre-dec-filters {
+        padding: 0
+    }
+
+    .main-filters-opts .incre-dec-filters .button-minus,
+    .main-filters-opts .incre-dec-filters .button-plus {
+        width: 22px
+    }
+}
+
+@media only screen and (max-width:1280px) {
+
+    .selected-hotel-names h3,
+    .selected-rrom-price h4 {
+        font-size: 20px
+    }
+
+    .hotel-checkouts-checkin p,
+    .hotel-facilityes ul a,
+    .hotel-facilityes ul li,
+    .hotels-policy-lists ul span,
+    .room-price-selection .rooms-price-pnight h6,
+    .rooms-options h5,
+    .rooms-options ul .included-items h6 {
+        font-size: 14px !important
+    }
+
+    .book-room-btn a,
+    .book-room-btn button,
+    .find-hotel-map a,
+    .hotel-basic-price-bx h5 span,
+    .photos-grid-container .caption,
+    .rooms-details-table .table-light th,
+    .rooms-options ul .not-included-items h6 {
+        font-size: 14px
+    }
+
+    .guest-review-bx h4,
+    .hotel-basic-price-bx h5,
+    .rooms-main-details h5 {
+        font-size: 16px
+    }
+
+    .room-price-selection .rooms-price-pnight h4 {
+        font-size: 18px
+    }
+
+    .login-info-book p,
+    .room-base-price .feture-inclued ul li,
+    .room-price-selection button,
+    .rooms-sepcs ul li,
+    .selected-rrom-price h6,
+    .selected-rrom-price span {
+        font-size: 12px
+    }
+
+    .rooms-main-details {
+        padding: 10px
+    }
+
+    .rating-number-points {
+        padding: 5px 15px;
+        font-size: 16px
+    }
+}
+
+@media only screen and (max-width:1200px) {
+
+    .facilities-base-lists ul,
+    .hotel-rate-review,
+    .stops-opts {
+        flex-wrap: wrap
+    }
+
+    .cofimr-seat-seleted,
+    .flight-aminities .aminities-list,
+    .hotel-revew-checkouts,
+    .pricing-listing-dtls,
+    .select-seat-lists {
+        width: 100%
+    }
+
+    .find-hotel-map {
+        padding: 10px;
+        margin-bottom: 4px
+    }
+
+    .rooms-details-table .table-light th {
+        padding: 20px 10px
+    }
+
+    .city-detail p,
+    .hotel-location-map h4,
+    .hotels-facalities-list h4,
+    .hotels-rules-policy h4 {
+        font-size: 18px
+    }
+
+    .book-room-btn button,
+    .find-hotel-map a,
+    .find-hotel-map p {
+        font-size: 12px !important
+    }
+
+    .facilities-base-lists ul li .facility-box {
+        margin: 5px 0
+    }
+
+    .hotels-policy-lists ul span {
+        width: 20%
+    }
+
+    .book-room-btn button {
+        max-width: max-content;
+        padding: 10px 20px
+    }
+
+    .book-room-btn {
+        margin-top: 6px;
+        padding-top: 6px
+    }
+
+    .city-detail a,
+    .hotels-cancellation-policy a,
+    .hotels-cancellation-policy p,
+    .switches-container label {
+        font-size: 12px
+    }
+
+    .hotel-booking-pric {
+        margin-left: 20px
+    }
+
+    .hotel-img-bx img {
+        width: 100px;
+        height: 100px
+    }
+
+    .hotel-location p {
+        width: 55%
+    }
+
+    .from-city-name-ticket h4,
+    .hotel-major-dtails h5,
+    .to-city-name-ticket h4 {
+        font-size: 20px
+    }
+
+    .travellers-info-drop {
+        width: 180%
+    }
+
+    .home-ticket .airline-icon-dcs span {
+        top: -15px !important;
+        width: 30px !important;
+        height: 30px !important
+    }
+
+    .second-ui-searchbc .flight-major-dtls h6 {
+        margin-bottom: 25px !important
+    }
+
+    .airline-name-sort-dtls p {
+        font-size: 10px
+    }
+
+    .main-filters-opts .incre-dec-filters {
+        width: 100%;
+        border: none;
+        margin-bottom: 0
+    }
+
+    .flight-filters .flight-filters-title img {
+        width: 18px;
+        height: 18px
+    }
+
+    .date-option {
+        width: 15%;
+        margin-right: 12px
+    }
+
+    .box .flight-aminities {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between
+    }
+
+    .box .flight-aminities .chargeble-fees {
+        width: 50%;
+        margin: 10px 0
+    }
+
+    .box .title,
+    .main-header .side-menu-opts .user-menu ul li a {
+        font-size: 14px
+    }
+
+    .search-flight-results .flight-result-bx .flight-basic-infos .flight-img-duration .flight-airline-img h4 {
+        font-size: 16px
+    }
+
+    .box .flight-aminities .chargeble-fees:last-child {
+        margin-bottom: 0
+    }
+
+    .incre-dec-filters .input-group {
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .main-filters-opts .incre-dec-filters .button-minus,
+    .main-filters-opts .incre-dec-filters .button-plus {
+        width: 30px;
+        height: 30px;
+        font-size: 16px !important
+    }
+
+    .main-filters-opts .incre-dec-filters .quantity-field {
+        width: 60% !important
+    }
+
+    .main-filters-opts .incre-dec-filters:nth-child(2n) {
+        padding: 0
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1 {
+        font-size: 55px
+    }
+
+    .form-input input {
+        padding-left: 20%
+    }
+
+    .next-trip-ticket .from-city-name-ticket h4,
+    .next-trip-ticket .to-city-name-ticket h4 {
+        font-size: 34px
+    }
+    .next-trip-ticket-booking .from-city-name-ticket h4,
+    .next-trip-ticket-booking .to-city-name-ticket h4 {
+        font-size: 34px
+    }
+
+    .download-txt h2 {
+        font-size: 30px
+    }
+
+    .download-txt h5 {
+        font-size: 16px;
+        margin-bottom: 0
+    }
+
+    .download-txt {
+        margin-top: 20px
+    }
+
+    .go-top:after {
+        padding: 2px 8px;
+        font-size: 18px
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px
+    }
+
+    .exclusive-offers .city-img-bx img {
+        max-height: 120px
+    }
+
+    .final-seat-sub-total-price,
+    .select-seat-lists ul {
+        display: block
+    }
+
+    .select-seat-lists ul li:nth-child(2) {
+        margin: 0
+    }
+
+    .airline-dtls-seats-info {
+        width: 100%;
+        display: block
+    }
+
+    .airline-dtls-seats-info ul {
+        margin-top: 5px
+    }
+
+    .l-span {
+        text-align: left !important
+    }
+
+    .r-span {
+        text-align: right !important
+    }
+
+    .name-title {
+        border-right: 1px solid #adadad;
+        padding-right: 15px
+    }
+
+    .left-side-text {
+        padding-left: 80px !important
+    }
+    .depart-bx label{
+        width: 100% !important;
+    }    
+}
+
+@media only screen and (max-width:1080px) {
+    .airline-logo .airline-price {
+        font-size: 16px;
+        padding-bottom: 10px
+    }
+
+    .pricing-calender a {
+        font-size: 13px
+    }
+
+    .date-option {
+        padding: 8px 15px;
+        margin-right: 15px
+    }
+
+    .second-ui-searchbc .from-city-name-ticket h4,
+    .second-ui-searchbc .to-city-name-ticket h4 {
+        font-size: 35px !important
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+
+   
+    .close-filters {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #f5f5f5;
+        padding: 10px;
+        margin-bottom: 10px;
+        position: sticky;
+        z-index: 999999999;
+        top: 0;
+        border: 1px solid #d3d3d3;
+        border-radius: 5px;
+        width: 100%;
+        padding: 15px 20px;
+        /* background-color: #ff0007; */
+        color: black;
+    }
+    .close-filters button{
+        color: black !important;
+    }
+    .deprature-times.project{
+        justify-content: space-between !important;
+    }
+    .deprature-times.project .depart-bx{
+        width: 24% !important;
+    }
+    .profile-img-dtls {
+        width: 40%;
+        padding: 10px 15px
+    }
+
+    .profile-links {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #adadad;
+        margin-bottom: 10px
+    }
+
+    .profile-links .bottom-white-part {
+        border-top: none;
+        border-bottom: none;
+        border-right: none;
+        background: 0 0
+    }
+
+    .profile-img-dtls h5,
+    .profile-img-dtls p {
+        color: #000;
+        font-size: 14px
+    }
+
+    .bottom-white-part .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: row !important
+    }
+
+    .rooms-details-table .table-light th {
+        min-width: 20rem
+    }
+
+    .hotel-rooms-details,
+    .hotels-details-tabs ul {
+        overflow-x: auto
+    }
+
+    .category-facalities {
+        flex-wrap: wrap;
+        justify-content: flex-start
+    }
+
+    .facilities-base-lists ul {
+        justify-content: flex-start
+    }
+
+    .basic-info-profile,
+    .download-app-img,
+    .find-hotel-map,
+    .flight-filters,
+    .hotel-basic-price-bx,
+    .hotels-cancellation-policy,
+    .mobile-filters-ls {
+        display: none
+    }
+
+    .profile-links .nav .nav-link {
+        width: 50%;
+        padding: 8px 0;
+        margin-bottom: 8px;
+        font-size: 13px
+    }
+
+    .nav__item img,
+    .profile-links .nav .nav-link img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px
+    }
+
+    .profile-links .nav-pills .nav-link::after {
+        right: 25px
+    }
+
+    .profile-last-part {
+        margin-top: 5%;
+        padding: 0;
+        display: flex;
+        align-items: center
+    }
+
+    .profile-tab-title img {
+        width: 30px;
+        height: 30px
+    }
+
+    .flight-hotels-search-tabs .nav-item .nav-link span,
+    .profile-detls-list .styledSelect,
+    .profile-last-part button {
+        font-size: 14px
+    }
+
+    .profile-image-bx span {
+        border: 1px solid #ff0007
+    }
+
+    .profile-img-dtls img {
+        width: 120px;
+        height: 120px
+    }
+
+    .category-facalities ul,
+    .facilities-base-lists ul li {
+        margin-right: 20px
+    }
+
+    .hotel-rate-review {
+        flex-direction: column-reverse;
+        align-items: flex-start
+    }
+
+    .hotel-checkouts-checkin p {
+        margin-bottom: 5px
+    }
+
+    .hotels-details-tabs ul li {
+        min-width: 18%
+    }
+
+    .home-ticket,
+    .hotel-mob-filter,
+    .site-main-title {
+        margin-bottom: 20px
+    }
+
+    .travellers-info-drop {
+        /* changes */
+        width: 100%
+    }
+
+    .flight-detail-info-bx {
+        width: 100%;
+        height: calc(100% - 120px);
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-left: 10%
+    }
+
+    .mobile-filters {
+        display: block;
+        float: left
+    }
+
+    .mobile-filter-main-btn {
+        background-color: #ff0007;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 20px;
+        border: none;
+        display: flex;
+        align-items: center
+    }
+
+    .mobile-filter-main-btn img {
+        width: 12px;
+        height: 12px;
+        margin-right: 5px
+    }
+
+    .airline-dtls-seats-info ul,
+    .mob-flight-result-data.visible-content,
+    .mob-flight-result-data.visible-content .backdrop-shades,
+    .side-menu-mobile,
+    .wp-mobile-ico {
+        display: block
+    }
+
+    .mob-flight-result-data .backdrop-shades {
+        z-index: 9999999
+    }
+
+    .cose-airline-time {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        text-align: right
+    }
+
+    .flight-timline-other-dtls,
+    .mobile-filters-ls.visible-content {
+        left: 0;
+        background-color: #fff;
+        z-index: 9999999;
+        position: fixed;
+        width: 100%;
+    }
+
+    .download-txt,
+    .save-filters {
+        text-align: center
+    }
+
+    .airline-price-inner {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        left: 0;
+        border-top: 1px solid #e4e4e4;
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .airline-price-inner .flight-amounts,
+    .flight-hotels-search-tabs .nav-tabs,
+    .flight-hotels-search-tabs .tab-content .tab-pane .tab-content {
+        padding: 0
+    }
+
+    .airline-price-inner button {
+        width: 100%;
+        padding: 10px 0;
+        background: #fff;
+        font-size: 14px;
+        max-width: 200px;
+        margin-top: 10px;
+        font-weight: 600;
+        border: 2px solid #ff0007;
+        border-radius: 10px;
+        text-transform: capitalize;
+        color: #ff0007
+    }
+
+    .cose-airline-time i,
+    .terms-condition-content h3 {
+        font-size: 22px
+    }
+
+    .flight-timline-other-dtls {
+        bottom: 0;
+        padding: 20px;
+        height: 90vh;
+        overflow-y: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px
+    }
+
+    .flight-detail-info-bx .card {
+        border-top: none
+    }
+
+    .flight-duration-timeline {
+        padding-top: 0;
+        margin-bottom: 5%;
+        padding-bottom: 5%
+    }
+
+    .main-filters-opts .incre-dec-filters .quantity-field {
+        width: 90% !important;
+        height: 30px
+    }
+
+    .mobile-filters-ls.visible-content {
+        top: 0;
+        height: 100vh;
+        display: block
+    }
+
+    .mobile-filters-ls.visible-content .flight-filters {
+        border: none;
+        border-radius: 0;
+        overflow: scroll;
+        height: 100%;
+        display: block
+    }
+
+   
+
+    .close-filters button,
+    .save-filters button {
+        background-color: transparent;
+        border: none;
+        outline: 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600
+    }
+
+    .flight-filters .flight-filters-title {
+        background-color: #ff0007;
+        color: #fff;
+    }
+
+    .flight-filters .flight-filters-title span {
+        font-weight: 600
+    }
+
+    .close-filters button svg,
+    .wp-mobile-ico a img {
+        margin-right: 5px
+    }
+
+    .save-filters {
+        position: fixed;
+        bottom: 0;
+        padding: 15px;
+        color: #fff;
+        background-color: #49b677;
+        width: 100%
+    }
+
+    .airline-logo img {
+        width: 40px;
+        height: 40px
+    }
+
+    .airline-logo {
+        min-height: 140px
+    }
+
+    .active-visible .flights-direct-opts label {
+        color: #000
+    }
+
+    .multi-city-search .single-city-data .add-new-flight-opt {
+        margin-left: 0;
+        margin-top: 20px
+    }
+
+    .search-form {
+        border-bottom-left-radius: 70px;
+        border-bottom-right-radius: 70px
+    }
+
+    .footer-links .bottom-site-urls ul,
+    .site-main-title h2 {
+        margin-bottom: 0
+    }
+
+    .go-top {
+        right: 5%
+    }
+
+    .summer-offer-bx {
+        width: 50%
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1 {
+        font-size: 46px
+    }
+
+    .flight-hotels-search-tabs {
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 25px;
+        webkit-box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0 0 11px 0 rgba(0, 0, 0, .25);
+        box-shadow: 0 0 11px 0 rgba(0, 0, 0, .25)
+    }
+
+    .flight-hotels-search-tabs .tab-pane .inner-tabs-cont {
+        flex-direction: column
+    }
+
+    .flights-direct-opts {
+        margin: 20px 0
+    }
+
+    .flight-hotels-search-tabs .nav-item {
+        min-width: 140px;
+        width: 48%
+    }
+
+    .flight-hotels-search-tabs #ex1 {
+        margin-bottom: 30px !important
+    }
+
+    .flight-hotels-search-tabs .nav-item:last-child {
+        margin-right: 0
+    }
+
+    .flight-hotels-search-tabs .nav-item .nav-link .search-ico-bx {
+        width: 45px;
+        height: 45px;
+        border-radius: 14px
+    }
+
+    .one-way-flight-search form,
+    .summer-offer-divs {
+        flex-wrap: wrap
+    }
+
+    .from-to-city {
+        width: 60%
+    }
+
+    .one-way-flight-search .departure-date {
+        width: 38%;
+        margin-right: 0
+    }
+
+    .travellers-info {
+        width: 42%;
+        margin-top: 15px
+    }
+
+    .search-btn {
+        margin-top: 15px
+    }
+
+    .airline-flight-lists ul li.active,
+    .airline-flight-lists ul li:last-child,
+    .flight-hotels-search-tabs .nav-tabs,
+    .pricing-listing-dtls {
+        width: 100%
+    }
+
+    .next-trip-ticket {
+        width: 100%;
+        max-width: 100%
+    }
+    .next-trip-ticket-booking {
+        width: 100%;
+        max-width: 100%
+    }
+
+
+    .feature-flights {
+        padding: 20px
+    }
+
+    .qr-download {
+        justify-content: center
+    }
+
+    .marketplace-download ul {
+        justify-content: center;
+        margin-top: 20px
+    }
+
+    .multi-city-search .single-city-data {
+        margin: 20px 0 0
+    }
+
+    .flight-hotels-search-tabs {
+        margin-top: -20px
+    }
+
+    .flight-hotels-search-tabs .tab-pane .inner-flight-search .nav-item {
+        width: 33%
+    }
+
+    .profile-main-content {
+        padding: 40px
+    }
+
+    .terms-condition-content h2 {
+        font-size: 26px
+    }
+
+    .terms-condition-content h4 {
+        font-size: 16px
+    }
+
+    .about-us-content p,
+    .terms-condition-content p,
+    .terms-condition-content ul li {
+        font-size: 13px
+    }
+
+    .side-menu-opts {
+        display: none !important
+    }
+
+    .mob-menu-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+
+    .main-header .logo img {
+        width: 20%
+    }
+
+    .wp-mobile-ico a {
+        color: #fff;
+        text-decoration: none
+    }
+
+    .footer-cont .insta-posts span {
+        width: 25%
+    }
+
+    .footer-cont .insta-posts {
+        justify-content: space-between
+    }
+
+    .airline-dtls-seats-info ul li {
+        width: 45%;
+        display: inline-flex;
+        margin: 8px 4px
+    }
+
+    .l-span {
+        text-align: left !important;
+        width: 70% !important
+    }
+
+    .r-span {
+        text-align: right !important;
+        width: 30% !important
+    }
+
+    .scroll table {
+        font-size: 14px !important
+    }
+
+
+     /* hotel-result */
+
+     .from-to-city {
+        /* width: 98% !important; */
+        width: 96% !important;
+        margin: auto !important;
+    }
+    .from-city-name input{
+        min-height: 3rem;
+        padding-left: 6%;
+    }
+
+
+    /* hotel-result-detail */
+
+    .one-way-flight-search{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .departure-date{
+        width: 50% !important;
+        padding: 0 10px !important;
+        margin: 2px 0 !important;
+    }
+    .hotel-class-select{
+        width: 48% !important;
+        padding: 2px !important;
+        margin: 4px 6px !important;
+    }
+    .search-btn{
+        margin: 0px 0 4px 8px !important;
+        width: 48% !important;
+    }
+}
+
+@media only screen and (max-width:875px) {
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1 {
+        font-size: 38px
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide img {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px
+    }
+
+    .myBannerSwiper .swiper-button-next,
+    .swiper-button-prev {
+        transform: translateY(0)
+    }
+
+    .flight-hotels-search-tabs .nav-item .nav-link {
+        max-height: 35px;
+        line-height: 40px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hotel-basic-infos {
+        padding: 20px 0
+    }
+
+    .hotel-major-dtails h5,
+    .innerpage-search-ticket .travellers-sort-info ul li h5,
+    .selected-hotel-names h3,
+    .selected-rrom-price h4 {
+        font-size: 18px
+    }
+
+    .hotels-details-tabs ul li {
+        min-width: 28%
+    }
+
+    .category-facalities ul {
+        width: 50%;
+        margin-right: 0
+    }
+
+    .hotel-location,
+    .hotels-policy-lists ul,
+    .hotelsguest-reviews {
+        flex-wrap: wrap
+    }
+
+    .totale-review-showcase {
+        margin-top: 20px
+    }
+
+    .hotels-policy-lists ul span {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+
+    .search-flight-results .hotel-result-bx {
+        flex-wrap: wrap;
+        padding: 10px
+    }
+
+    .hotel-location a,
+    .hotel-location p {
+        font-size: 12px;
+        width: 100%;
+        text-align: left
+    }
+
+    .hotel-ratings svg {
+        font-size: 10px
+    }
+
+    .hotel-booking-pric {
+        width: 100%;
+        margin: 10px 0 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        border-left: none;
+        border-top: 1px dashed #adadad
+    }
+
+    .hotel-location p svg,
+    .search-flight-results .flight-result-bx .flight-basic-infos .flight-img-duration .flight-airline-img h4 {
+        font-size: 14px
+    }
+
+    .hotel-location a svg {
+        width: 8px;
+        height: 8px
+    }
+
+    .hotel-amounts {
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    .hotel-location-input .from-city-name input {
+        min-height: 40px
+    }
+
+    .hotel-major-dtails {
+        width: 75%
+    }
+
+    .hotel-img-bx {
+        width: 20%
+    }
+
+    .travellers-info-drop {
+        /* changes */
+        width: 100%;
+        left: 0
+    }
+
+    .flight-detail-info-bx {
+        padding-left: 12%
+    }
+
+    .second-ui-searchbc .flight-major-dtls h6 p {
+        margin-bottom: 0 !important;
+        font-size: 18px !important
+    }
+
+    .second-ui-searchbc .flight-major-dtls h6 {
+        font-size: 16px !important;
+        margin-bottom: 20px !important
+    }
+
+    .second-ui-searchbc .from-city-name-ticket h4,
+    .second-ui-searchbc .to-city-name-ticket h4 {
+        font-size: 24px !important
+    }
+
+    .airline-name-sort-dtls h5,
+    .flight-amounts h4,
+    .innerpage-search-ticket .from-city-name-ticket span,
+    .innerpage-search-ticket .to-city-name-ticket span {
+        font-size: 12px
+    }
+
+    .innerpage-search-ticket .travellers-sort-info ul li img {
+        width: 10px
+    }
+
+    .innerpage-search-ticket .modify-serch-edit-btn {
+        right: -10px
+    }
+
+    .date-option .date {
+        font-size: 19px;
+        line-height: 30px
+    }
+
+    .day-name {
+        font-weight: 400;
+        font-size: 12px
+    }
+
+    .date-option .price {
+        font-weight: 500;
+        font-size: 12px
+    }
+
+    .date-option {
+        width: 18%;
+        margin-right: 11px
+    }
+
+    .airline-logo .airline-price {
+        font-size: 14px;
+        padding-bottom: 6px;
+        margin-bottom: 6px
+    }
+
+    .airline-logo img,
+    .feature-flight-dtls .airline-dtls .airline-img {
+        width: 30px;
+        height: 30px
+    }
+
+    .airline-logo {
+        min-height: 120px
+    }
+
+    .airline-slider .swiper-button-next,
+    .airline-slider .swiper-button-prev {
+        display: none;
+    }
+
+    .search-flight-results .flight-result-bx .flight-basic-infos {
+        padding: 15px 20px
+    }
+
+    .search-flight-results .flight-result-bx .flight-basic-infos .flight-img-duration .flight-airline-img img {
+        width: 40px;
+        height: 40px
+    }
+
+    .search-flight-results .flight-result-bx .flight-basic-infos .flight-img-duration {
+        flex-direction: column
+    }
+
+    .flight-airline-img {
+        width: 100%
+    }
+
+    .flight-duration-timimg-info {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: flex-start
+    }
+
+    .flight-amounts h3 {
+        font-size: 20px
+    }
+
+    .flight-amounts h3 sup,
+    .flight-duration-timimg-info .airline-icon-dcs .flight-major-dtls p {
+        font-size: 16px
+    }
+
+    .flight-amounts button {
+        font-size: 12px;
+        border-width: 1px
+    }
+
+    .flight-duration-timimg-info .airline-icon-dcs .flight-major-dtls h6 {
+        font-size: 13px
+    }
+
+    .innerpage-search-ticket .modify-serch-edit-btn img {
+        width: 20px;
+        height: 20px
+    }
+
+    .flight-hotels-search-tabs .nav-item {
+        margin-right: 16px
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    .footer-cont .read-more-btn {
+        display: inline-block
+    }
+
+    .footer-cont {
+        margin-bottom: 20px
+    }
+
+    .main-header .logo img {
+        width: 30%
+    }
+
+    .from-to-city {
+        width: 100%;
+        margin-bottom: 15px
+    }
+
+    .multi-city-search .departure-date {
+        width: 50% !important
+    }
+
+    .one-way-flight-search .departure-date {
+        width: 48%;
+        margin-left: 0;
+        margin-right: 15px
+    }
+
+    .travellers-info {
+        width: 48%;
+        margin-left: 0;
+        margin-top: 0;
+        margin-right: 0
+    }
+
+    .travellers-info:nth-child(2) {
+        margin-right: 10px
+    }
+
+    .search-btn {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 48%;
+        margin-left: 15px
+    }
+
+    .continue-pay-btn button {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+        background-color: #1faf38;
+        color: #fff;
+        border: none;
+        text-transform: capitalize;
+        font-size: 16px !important;
+        font-weight: 500;
+        margin-bottom: 10px !important
+    }
+
+
+
+
+     /* hotel-result */
+
+     .hotel-book-pr{
+        margin:  auto !important;
+    }
+    .flight-amounts a{
+        margin: auto !important;
+        max-width: 150px !important;
+    }
+    .hotel-book-pr span{
+        font-size: 16px !important;
+    }
+    .hotel-book-pr h3{
+        font-size: 22px !important;
+        margin: 5px 0 !important;
+    }
+    .hotel-book-pr h4{
+        font-size: 14px !important;
+    }
+    .hotel-class-select input {
+        min-height: 3.3rem !important;
+        cursor: pointer;
+        margin-bottom: 2px !important;
+    }
+
+    /* hotel-result-detail */
+
+    .departure-date{
+        width: 100% !important;
+        /* padding: 0 10px !important; */
+        margin: 2px 0 !important;
+    }
+    .hotel-class-select{
+        width: 100% !important;
+        /* padding: 2px !important; */
+        /* margin: 4px 6px !important; */
+    }
+    .search-btn{
+        margin: 0px 0 4px 8px !important;
+        /* width: 100% !important; */
+    }
+    .hotel-class-select {
+        /* width: 48% !important; */
+        /* padding: 1px !important; */
+        margin: 1px 9px !important;
+
+    }
+    .search-btn{
+        margin: 2px 0 4px 8px !important;
+        width: 96% !important;
+    }
+
+
+    /* booking four ticket */
+    /* .tick-book-dtls-new{
+        width: 100%;
+        font-size: 12px;
+    } */
+}
+
+@media only screen and (max-width:675px) {
+    .flight-detail-info-bx {
+        padding-left: 15%
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1 {
+        font-size: 30px
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide img {
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        /* min-height: 200px; */
+        object-fit: cover;
+        max-height: 210px
+    }
+
+    .site-main-title h2 {
+        font-size: 20px
+    }
+
+    
+
+    .home-banner .myBannerSwiper .swiper-slide .banner-title {
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: max-content;
+    }
+
+     /* hotel-result */
+     .hotel-img-bx {
+        width: 100% !important;
+        border-radius: 0px !important;
+        object-fit: cover !important;
+    }
+    
+    .hotel-img-bx img {
+        width: 100% !important;
+        height: 200px !important;
+        border-radius: 10px !important;
+        object-fit: cover !important;
+    }
+    .hotel-book-pr span{
+        font-size: 16px !important;
+    }
+    .hotel-book-pr h3{
+        font-size: 24px !important;
+        margin: 3px 0 !important;
+    }
+    .hotel-book-pr h4{
+        font-size: 14px !important;
+    }
+    .hotel-major-dtails{
+        margin-top: 20px !important;
+    }
+    .star-rate{
+        font-size: 15px !important;
+    }
+    .hotel-location p{
+        font-size: 14px;
+    }
+    .map-location{
+        font-size: 18px !important;
+    }
+    .hotel-location a{
+        font-size: 14px;
+    }
+    .flight-amounts a{
+        margin: auto !important;
+        font-size: 14px !important;
+        padding: 8px 0px;
+        width: 35% !important;
+    }
+    .hotel-booking-pric{
+        padding: 8px 0 !important;
+    }
+    
+}
+
+@media only screen and (max-width:575px) {
+
+    #bookTickets .modal-header,
+    #selectSeat .modal-header,
+    #staticBackdrop .modal-header {
+        border-bottom: 1px solid #adadad
+    }
+
+    .hotels-details-tabs ul li {
+        min-width: 30%;
+        font-size: 14px
+    }
+
+    .photos-grid-container .sub {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .facilities-base-lists ul li .facility-box {
+        font-size: 12px;
+        min-width: 100px;
+        min-height: 40px
+    }
+
+    .arrival-class span,
+    .departure-luggage span,
+    .hotel-checkouts-checkin p {
+        font-size: 12px !important
+    }
+
+    .arrival-class h5,
+    .departure-luggage h5,
+    .hotel-checkouts-checkin span {
+        font-size: 14px !important
+    }
+
+    .facilities-base-lists ul li {
+        margin-right: 10px
+    }
+
+    .hotel-amounts a {
+        max-width: 130px
+    }
+
+    .hotel-amounts {
+        border: none !important;
+        padding: 0 15px !important;
+        justify-content: space-between !important
+    }
+
+    .hotel-location a,
+    .hotel-location p {
+        margin-bottom: 10px
+    }
+
+    .hotel-major-dtails {
+        margin-left: 20px;
+        width: 70%
+    }
+
+    .hotel-img-bx img {
+        width: 90px;
+        height: 90px
+    }
+
+    .flight-amounts {
+        border-top: 1px dashed #adadad;
+        padding: 20px;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+
+    .flight-cancellation {
+        border-top: 1px solid #adadad;
+        padding-top: 10px
+    }
+
+    .airline-price-inner .flight-amounts {
+        border: none
+    }
+
+    .citys-bx,
+    .exclusive-offers .city-img-bx img {
+        border-radius: 5px
+    }
+
+    .flight-detail-info-bx {
+        padding-left: 20%;
+        height: calc(100% - 100px)
+    }
+
+    .pricing-collaps .card .next-date,
+    .pricing-collaps .card .prev-date {
+        display: none
+    }
+
+    .hotel-dtl-bx .hotel-dtls,
+    .pricing-collaps .card {
+        padding: 10px
+    }
+
+    .date-selector {
+        padding: 0;
+        overflow-x: auto
+    }
+
+    .flight-timline-other-dtls {
+        padding: 20px
+    }
+
+    .main-header .logo img {
+        width: 40%
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1 {
+        font-size: 24px
+    }
+
+    .next-trip-ticket .from-city-name-ticket h4,
+    .next-trip-ticket .to-city-name-ticket h4 {
+        font-size: 28px
+    }
+    .next-trip-ticket-booking .from-city-name-ticket h4,
+    .next-trip-ticket-booking .to-city-name-ticket h4 {
+        font-size: 28px
+    }
+
+    .tick-book-dtls span {
+        font-size: 18px
+    }
+
+    .main-footer {
+        overflow: hidden
+    }
+
+    .faqs-list .accordion-button,
+    .side-menu-mobile .nav__item,
+    .site-black-title a,
+    .wp-mobile-ico a {
+        font-size: 14px
+    }
+
+    .profile-main-content {
+        padding: 30px
+    }
+
+    .profile-tab-title img {
+        width: 30px;
+        height: 30px
+    }
+
+    .profile-tab-title {
+        padding-bottom: 20px;
+        margin-bottom: 20px
+    }
+
+    .my-profile-details {
+        padding: 40px 0
+    }
+
+    .download-app .d-flex {
+        align-items: center
+    }
+
+    .download-txt {
+        text-align: center
+    }
+
+    .profile-tab-title h4 {
+        font-size: 18px;
+        width: 80%
+    }
+
+    .terms-condition-content h2,
+    .terms-condition-content h3,
+    .terms-condition-content h4 {
+        font-size: initial
+    }
+
+    .citys-bx {
+        padding: 10px
+    }
+
+    .flight-hotels-search-tabs {
+        margin-top: 15px
+    }
+
+    .one-way-flight-search .search-btn a,
+    .one-way-flight-search .search-btn button {
+        font-size: 16px
+    }
+    .top-right{
+        background-color: whitesmoke;
+        width: 90%;
+        outline: none;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        padding: 10px;
+        position: fixed;
+        top: 40px;
+        right: 0px;
+        z-index: 999999999;
+        display: block;
+        line-height: 20px;
+    }
+    .top-right-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+    }
+    .left-side{
+        
+    }
+    .left-side h4{
+        /* width: 55%; */
+        /* font-weight: 900; */
+        font-size: 15px !important;
+        font-weight: bold !important;
+    }
+    .center-side{
+        /* width: 25%; */
+    }
+    .center-side button{
+        color: white;
+        background-color: #ff0007;
+        font-weight: bold;
+        padding: 4px 10px 8px 10px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        font-size: 14px;
+        width: 125px;
+        margin-right: 10px;
+    }
+    .right-side{
+        /* width: 10%; */
+    }
+    .right-side button{
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (max-width:491px) {
+    .travelers-names-based-seat ul {
+        width: 100%;
+        display: block
+    }
+
+    .travelers-names-based-seat ul li {
+        width: 100%;
+        margin: 5px 0
+    }
+}
+
+@media only screen and (max-width:475px) {
+
+    .close-filters button,
+    .save-filters button,
+    .selected-hotel-names h3,
+    .selected-rrom-price h4 {
+        font-size: 16px
+    }
+
+    .box .title,
+    .flight-duration-timeline ul .layover-dtls .layour-city-name p,
+    .selected-hotel-names p,
+    input[type=checkbox]+label {
+        font-size: 12px
+    }
+
+    .flight-city-dtls .airline-icon-dcs,
+    .travellers-info-drop {
+        width: 100%
+    }
+
+    .add-new-flight-opt {
+        margin-left: 20px !important
+    }
+
+    .save-filters {
+        bottom: 10px
+    }
+
+    .innerpage-search-ticket .airline-icon-dcs .flight-major-dtls h6 p {
+        font-size: 12px !important
+    }
+
+    .second-ui-searchbc .flight-major-dtls h6 {
+        font-size: 12px !important;
+        margin-bottom: 20px !important
+    }
+
+    .innerpage-search-ticket .modify-serch-edit-btn {
+        bottom: -10px;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%)
+    }
+
+    .second-ui-searchbc .from-city-name-ticket h4,
+    .second-ui-searchbc .to-city-name-ticket h4 {
+        font-size: 20px !important
+    }
+
+    .copyrights-footer p,
+    .flight-major-dtls p,
+    .innerpage-search-ticket .from-city-name-ticket span,
+    .innerpage-search-ticket .to-city-name-ticket span {
+        font-size: 10px
+    }
+
+    .innerpage-search-ticket .city-info {
+        padding-bottom: 15px !important
+    }
+
+    .innerpage-search-ticket .modify-serch-edit-btn img {
+        width: 22px;
+        height: 22px
+    }
+
+    .active-visible .modify-serch-edit-btn {
+        transform: rotate(180deg) translateX(-50%) !important
+    }
+
+    .flight-detail-info-bx {
+        padding-left: 28%;
+        height: calc(100% - 100px)
+    }
+
+    .box .flight-class-luggage {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .flight-hotels-search-tabs .tab-pane .inner-flight-search .nav-item {
+        min-width: 120px
+    }
+
+    .flight-hotels-search-tabs .nav-item {
+        margin-right: 14px
+    }
+
+    input[type=checkbox]+label::after {
+        width: 18px;
+        height: 18px
+    }
+
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1,
+    .next-trip-ticket .from-city-name-ticket h4,
+    .next-trip-ticket .to-city-name-ticket h4 {
+        font-size: 20px
+    }
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1,
+    .next-trip-ticket-booking .from-city-name-ticket h4,
+    .next-trip-ticket-booking .to-city-name-ticket h4 {
+        font-size: 20px
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 20px;
+        height: 20px;
+
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+    /* width: 40px; */
+    /* height: 40px; */
+    background-color:  #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    top: 60%;
+    /* transform: translateY(-50%) */
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: #231f20;
+        font-size: 12px;
+        font-weight: 700
+    }
+
+    .one-way-flight-search .departure-date {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px
+    }
+
+    .travellers-info .select {
+        margin-top: 6px
+    }
+
+    .travellers-info {
+        width: 100%;
+        margin-bottom: 5px
+    }
+
+    .from-to-city {
+        margin-bottom: 10px
+    }
+
+    .one-way-flight-search .travellers-info .input-group .quantity-field {
+        width: 80% !important
+    }
+
+    .search-btn {
+        margin: 15px 0 0;
+        width: 100%
+    }
+
+    .one-way-flight-search .search-btn a,
+    .one-way-flight-search .search-btn button {
+        height: 3rem;
+        flex-direction: row
+    }
+
+    .one-way-flight-search .search-btn a img,
+    .one-way-flight-search .search-btn button img {
+        width: 20px;
+        height: 20px;
+        margin-right: 6px
+    }
+
+    .airline-icon-dcs,
+    .from-city-name-ticket,
+    .to-city-name-ticket {
+        width: 25%
+    }
+
+    .next-trip-ticket .airline-icon-dcs,
+    .next-trip-ticket .from-city-name-ticket,
+    .next-trip-ticket .to-city-name-ticket {
+        text-overflow: ellipsis;
+        white-space: normal;
+        overflow: hidden
+    }
+    .next-trip-ticket-booking .airline-icon-dcs,
+    .next-trip-ticket-booking .from-city-name-ticket,
+    .next-trip-ticket-booking .to-city-name-ticket {
+        text-overflow: ellipsis;
+        white-space: normal;
+        overflow: hidden
+    }
+
+    .site-main-title a,
+    .tick-book-dtls span {
+        font-size: 14px
+    }
+
+    .site-main-title h2 {
+        font-size: 18px
+    }
+
+    .flights-direct-opts span:first-child {
+        margin-right: 10px !important
+    }
+
+    .arrow::after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid #ff0007;
+        border-left: 5px solid transparent;
+        position: absolute;
+        right: -5px;
+        top: -4px;
+        transform: rotate(180deg)
+    }
+    .home-banner{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+    }
+/* .home-banner .swiper-slide img {
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    overflow: hidden;
+} */
+.home-banner .myBannerSwiper .swiper-wrapper img{
+    width: 100% !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+     /* hotel-result */
+     .hotel-major-dtails{
+        line-height: 10px !important;
+    }
+    .hotel-ratings{
+        margin: 6px 0 !important;
+    }
+    .agent-five img{
+        width: 40px;
+        border-radius: 50%;
+        margin: 1px 6px;
+    }
+}
+
+@media only screen and (max-width:431px) {
+
+    .date-option,
+    .flight-hotels-search-tabs .nav-item {
+        margin-right: 10px
+    }
+
+    .hotel-major-dtails h5 {
+        font-size: 16px
+    }
+
+    .hotel-major-dtails {
+        margin-left: 30px
+    }
+
+    .hotel-img-bx img {
+        width: 80px;
+        height: 80px
+    }
+
+    .date-option {
+        width: 22%
+    }
+
+    .flight-hotels-search-tabs .tab-pane .inner-flight-search .nav-item {
+        min-width: 30%
+    }
+
+    .name-title {
+        border-right: 1px solid #adadad;
+        padding-right: 15px !important
+    }
+
+    .left-side-text {
+        padding-left: 85px !important
+    }
+    .sign-in-btn-new button{
+        background-color: #ff0007;
+        color: #fff;
+    }
+    .sign-in-btn-new {
+        text-align: center;
+    }
+    .sign-in-btn-new button {
+        font-size: 16px;
+        font-weight: 500;
+        width: 75%;
+        border-radius: 10px;
+        outline: 0;
+        border: none;
+        padding: 12px 0;
+        text-transform: capitalize
+    }
+    /* booking four ticket */
+    /* .tick-book-dtls-new{
+        width: 100%;
+        font-size: 9px;
+    } */
+
+
+}
+
+@media only screen and (max-width:425px) {
+
+    .l-span,
+    .r-span {
+        font-size: 12px !important
+    }
+
+    .pricing-listing-dtls {
+        width: 100%
+    }
+
+    .l-span {
+        text-align: left !important;
+        width: 70% !important
+    }
+
+    .r-span {
+        text-align: right !important;
+        width: 30% !important
+    }
+
+    .cofimr-seat-seleted {
+        margin-top: 14px !important;
+        width: 80%;
+        margin: auto
+    }
+
+    .cofimr-seat-seleted button {
+        font-size: 14px
+    }
+
+    .cofimr-seat-seleted span,
+    .cofimr-seat-seleted span a {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin: auto !important
+    }
+
+    .cofimr-seat-seleted .line-none {
+        display: none !important;
+        visibility: hidden !important
+    }
+
+    .layovertime-final-flight span {
+        border: 1px dashed #ff0007;
+        padding: 5px 15px !important;
+        border-radius: 20px;
+        font-size: 12px !important;
+        position: relative;
+        z-index: 999;
+        background-color: #fff;
+        color: #000
+    }
+
+    .byclick-text {
+        line-height: 14px !important;
+        padding-left: 30px !important;
+        font-size: 12px !important;
+        font-weight: 400 !important
+    }
+
+    .pay-now-payment-btn {
+        width: 100%;
+        padding: 8px 0 !important;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #ff0007;
+        color: #fff;
+        border: none;
+        margin-top: 10px;
+        font-size: 16px !important
+    }
+
+    .flight-detail-pop-title {
+        font-size: 18px !important
+    }
+
+    .payment-opt-title h5 {
+        font-size: 14px !important
+    }
+
+    .airline-flight-lists {
+        width: 100%;
+        display: block
+    }
+
+    .airline-flight-lists ul {
+        padding-left: 0;
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        width: 100%;
+        display: block
+    }
+
+    .airline-flight-lists ul li {
+        float: left;
+        min-width: 20%;
+        align-items: center;
+        padding: 10px 0;
+        cursor: pointer;
+        justify-content: center;
+        border-right: 1px solid #d8d8d8;
+        border-bottom: 1px solid transparent;
+        width: 100%;
+        display: block
+    }
+
+    .airline-flight-lists ul li:last-child {
+        border-right: none;
+        width: 100%;
+        display: block
+    }
+
+    .airline-flight-lists ul li.active {
+        background-color: #fff3f4;
+        border-bottom: 2px solid #ff0007;
+        width: 100%;
+        display: block
+    }
+
+    .flight-numb-img img {
+        margin-left: 10px !important
+    }
+
+    .airline-dtls-seats-info {
+        margin-top: 125px !important
+    }
+
+    /* hotel-result */
+    .hotel-book-pr span{
+        font-size: 14px !important;
+    }
+    .hotel-book-pr h3{
+        font-size: 22px !important;
+        margin: 3px 0 !important;
+    }
+    .hotel-book-pr h4{
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .innerpage-search-ticket .airline-icon-dcs {
+        width: 50%
+    }
+
+    .menu-overlay {
+        width: 70%
+    }
+    #col-one table th{
+        font-size: 14px !important;
+    }
+    #col-one table td{
+        font-size: 14px !important;
+    }
+    #col-two table th{
+        font-size: 14px !important;
+    }
+    #col-two table td{
+        font-size: 14px !important;
+    }
+    #col-three table th{
+        font-size: 14px !important;
+    }
+    #col-three table td{
+        font-size: 14px !important;
+    }
+    
+
+
+}
+
+@media only screen and (max-width:410px) {
+    .airline-dtls-seats-info ul {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .airline-dtls-seats-info ul li {
+        width: 45%;
+        display: inline-flex
+    }
+
+    .skip-selection {
+        display: none;
+        
+    }
+
+    .skip {
+        width: 100%;
+        display: block !important;
+        flex-direction: column !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .front-seat-btn,
+    .rear-seat-btn {
+        font-size: 12px !important;
+        border-bottom: .1rem solid #006ee3 !important
+    }
+}
+
+@media only screen and (max-width:399px) {
+    #collapseExample-one .card{
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .date-option {
+        width: 35%
+    }
+
+    .airline-icon-dcs,
+    .from-city-name-ticket,
+    .to-city-name-ticket {
+        text-overflow: ellipsis;
+        white-space: unset;
+        overflow: hidden
+    }
+
+    .box .flight-aminities .chargeble-fees {
+        width: 100%
+    }
+
+    .flight-detail-info-bx {
+        padding-left: 35%
+    }
+
+    .flight-hotels-search-tabs {
+        padding: 20px
+    }
+
+    .flight-hotels-search-tabs .nav-item .nav-link .search-ico-bx {
+        width: 40px;
+        height: 40px
+    }
+
+    .flight-hotels-search-tabs .nav-item .nav-link .search-ico-bx img {
+        width: 24px;
+        height: 24px
+    }
+
+    .flight-hotels-search-tabs .tab-pane .inner-flight-search .nav-link,
+    .form-input input,
+    .form-input label {
+        font-size: 12px
+    }
+
+    .next-trip-ticket .from-city-name-ticket h4,
+    .next-trip-ticket .to-city-name-ticket h4 {
+        font-size: 20px
+    }
+    .next-trip-ticket-booking .from-city-name-ticket h4,
+    .next-trip-ticket-booking .to-city-name-ticket h4 {
+        font-size: 20px
+    }
+
+    .tick-book-dtls p {
+        font-size: 10px
+    }
+
+    .city-detail p {
+        font-size: 16px
+    }
+
+    .site-black-title h2 {
+        font-size: 22px
+    }
+
+    .download-txt h2 {
+        font-size: 24px
+    }
+
+    .airline-dtls-seats-info ul li,
+    .arrival-class h5,
+    .departure-luggage h5,
+    .final-amount-pay,
+    .travelers-names-list tbody,
+    .travelers-names-list th {
+        font-size: 12px !important
+    }
+
+    .marketplace-download ul li:last-child {
+        margin-right: 0
+    }
+
+    .arrival-class span,
+    .departure-luggage span {
+        font-size: 10px !important
+    }
+
+    .trip-price-infos ul li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px !important;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #5c5c5c
+    }
+
+    .final-amount-pay {
+        color: #000;
+        border-top: 1px solid #adadad;
+        padding-top: 5px;
+        margin-top: 5px
+    }
+
+    .airline-dtls-seats-info span {
+        font-size: 13px;
+        font-weight: 500
+    }
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1, .next-trip-ticket .from-city-name-ticket h4, .next-trip-ticket .to-city-name-ticket h4 {
+        font-size: 16px;
+    }
+    .home-banner .myBannerSwiper .swiper-slide .banner-title h1, .next-trip-ticket-booking .from-city-name-ticket h4, .next-trip-ticket-booking .to-city-name-ticket h4 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .ticket-number-dtls {
+        display: block
+    }
+
+    .tick-book-dtls {
+        width: 100%;
+        border-right: none;
+        margin: 10px 1px
+    }
+
+    .tick-book-dtls p {
+        font-size: 14px
+    }
+}
+
+
+
+

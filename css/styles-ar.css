@@ -1,0 +1,269 @@
+.hotel-location p svg,
+.main-header .side-menu-opts .menu ul li a img,
+.main-header .side-menu-opts .user-menu ul li a img {
+    margin-right: 0;
+    margin-left: 8px
+}
+
+.feature-flight-dtls .airline-dtls .ariline-name-city,
+.switches-container {
+    margin-right: 20px
+}
+
+.flight-hotels-search-tabs .nav-item .nav-link span {
+    padding-right: 0
+}
+
+.flight-hotels-search-tabs .tab-pane .inner-flight-search .nav-item:first-child a {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px
+}
+
+.flight-hotels-search-tabs .tab-pane .inner-flight-search .nav-item:last-child a {
+    border-top-right-radius: 0;
+    border-top-left-radius: 10px
+}
+
+input[type=checkbox] {
+    right: -9999px;
+    left: auto
+}
+
+.flights-direct-opts span {
+    margin-right: 15px
+}
+
+.form-input label {
+    left: auto;
+    right: 20px
+}
+
+.form-input input {
+    padding-left: 5%;
+    padding-right: 18%
+}
+
+.switch-city-opt {
+    right: auto;
+    left: 15px
+}
+
+.flights-sort-by .srot-by-lists ul li span label::after,
+.one-way-flight-search .departure-date label {
+    left: 0;
+    right: auto
+}
+
+.one-way-flight-search .travellers-info .styledSelect {
+    left: auto;
+    right: 10px;
+    width: 95%
+}
+
+.hotels-meals-filt .select .styledSelect::after,
+.styledSelect:after {
+    left: 10px;
+    right: auto
+}
+
+.travellers-info {
+    margin: 0 10px
+}
+
+.airline-icon-dcs span {
+    right: 50%;
+    left: auto;
+    transform: rotate(180deg) translateX(-50%)
+}
+
+.category-facalities ul li::before,
+.footer-links .bottom-site-urls ul li::before,
+.form-floating>label,
+.hotel-facilityes ul li::before,
+.hotels-policy-lists ul li::before,
+.iti--allow-dropdown .iti__flag-container,
+.iti--separate-dial-code .iti__flag-container,
+.room-base-price .feture-inclued ul li::before,
+.rooms-options ul li::before,
+.rooms-sepcs ul li::before {
+    right: 0;
+    left: auto
+}
+
+.ariline-name-city span img,
+.arrow,
+.find-hotel-map a svg,
+.hotel-price-dtls a img,
+.rooms-options a svg,
+.rooms-sepcs a svg,
+.site-main-title a img,
+.ticket-price-dtls a img,
+.view-all-hotel-face svg {
+    transform: rotate(180deg)
+}
+
+.tick-book-dtls {
+    border-right: none;
+    border-left: 1px solid #d3d3d3
+}
+
+.hotel-dtls span img {
+    margin-right: 0 !important;
+    margin-left: 5px
+}
+
+.facilities-base-lists ul li .facility-box svg,
+.hotel-location a svg,
+.hotels-cancellation-policy a svg,
+.selected-hotel-names p svg {
+    margin-right: 0;
+    margin-left: 5px
+}
+
+.social-links ul li a img {
+    margin-left: 6px
+}
+
+.main-footer .footer-cont {
+    text-align: right
+}
+
+.footer-links .bottom-site-urls ul li {
+    padding-left: 0;
+    padding-right: 15px
+}
+
+.go-top {
+    right: auto;
+    left: 3%
+}
+
+.iti input,
+.iti input[type=tel],
+.iti input[type=text] {
+    padding-left: 0 !important;
+    padding-right: 95px !important
+}
+
+.input-group-append {
+    right: auto;
+    left: 8px
+}
+
+.box .flight-aminities .chargeble-fees img,
+.flight-cancellation a svg,
+.innerpage-search-ticket .travellers-sort-info ul li img {
+    margin-left: 5px
+}
+
+.innerpage-search-ticket .modify-serch-edit-btn {
+    right: auto;
+    left: -15px
+}
+
+.airline-slider .swiper-button-prev {
+    right: -10px;
+    left: auto
+}
+
+.airline-slider .swiper-button-next {
+    left: -10px;
+    right: auto
+}
+
+.flight-amounts {
+    border-left: none;
+    border-right: 1px dashed #e4e4e4
+}
+
+.search-flight-results .flight-result-bx .flight-basic-infos .flight-img-duration .flight-airline-img h4 {
+    margin-right: 12px
+}
+
+.flight-inner-dtls {
+    border-left: none;
+    border-right: 1px dashed #d6d6d6
+}
+
+.flights-sort-by .srot-by-lists ul li span label::before {
+    left: 15px;
+    right: auto
+}
+
+.main-filters-opts .incre-dec-filters {
+    border-right: none;
+    border-left: 1px solid #e4e4e4
+}
+
+.main-filters-opts .incre-dec-filters:nth-child(2n) {
+    border-left: none;
+    padding-right: 15px
+}
+
+.child-age-opts .selected-childs-ages select {
+    background-position: left 5px top 50%
+}
+
+.hotel-booking-pric {
+    border-left: none;
+    margin-right: 36px;
+    margin-left: 0;
+    padding: 15px 20px 15px 0;
+    border-right: 1px dashed #adadad
+}
+
+.hotel-location a,
+.selected-rrom-price,
+.selected-rrom-price h6 {
+    text-align: left
+}
+
+.hotel-amounts {
+    border: none
+}
+
+.hotel-location-input .from-city-name input {
+    padding-left: 10%;
+    padding-right: 12%
+}
+
+.hotel-revew-checkouts span {
+    margin-left: 0;
+    margin-right: 5px
+}
+
+.find-hotel-map a svg {
+    margin-left: 0;
+    margin-right: 2px
+}
+
+.category-facalities ul li,
+.hotel-facilityes ul li,
+.room-base-price .feture-inclued ul li,
+.rooms-options ul li {
+    padding-left: 0;
+    padding-right: 18px
+}
+
+.book-room-btn button svg {
+    margin-left: 0;
+    margin-right: 5px;
+    transform: rotate(180deg)
+}
+
+.rooms-sepcs ul li {
+    padding-left: 0;
+    padding-right: 16px
+}
+
+.hotels-policy-lists ul li {
+    margin-right: 0;
+    margin-left: 50px;
+    padding-left: 0;
+    padding-right: 12px
+}
+
+.rating-number-points {
+    margin-right: 0;
+    margin-left: 10px
+}
