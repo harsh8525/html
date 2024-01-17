@@ -5,16 +5,16 @@ FROM node:alpine AS nodebuilder
 WORKDIR /app
 
 # Copy package.json and package-lock.json to the working directory
-COPY package.json package-lock.json /app/
+#COPY package.json package-lock.json /app/
 
 # Install dependencies
-RUN npm install
+#RUN npm install
 
 # Copy the entire codebase to the working directory
 COPY . /app/
 
 # Build your Node.js application (replace "build" with the actual command to build your app)
-RUN npm run build
+#RUN npm run build
 
 # Use PHP-Apache image
 FROM php:7.4-apache
@@ -29,7 +29,7 @@ COPY --from=nodebuilder /app/dist /var/www/html/
 # COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
 
 # Expose the port your app runs on (replace <PORT_NUMBER> with your app's actual port)
-EXPOSE 80
+EXPOSE 3000
 
 # Start Apache
 CMD ["apache2-foreground"]
