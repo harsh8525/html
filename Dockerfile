@@ -1,16 +1,17 @@
-# Use PHP Apache base image
-FROM php:7.4-apache
+# Use Ubuntu as the base image
+FROM ubuntu:latest
 
-# Copy the HTML code to the Apache document root
-COPY . /var/www/html
+# Update the package list and install Apache
+RUN apt-get update && \
+    apt-get install -y apache2
 
-# Update Apache configuration to listen on port 8081
-RUN sed -i 's/Listen 80/Listen 8081/' /etc/apache2/ports.conf \
-    && sed -i 's/<VirtualHost \*:80>/<VirtualHost \*:8081>/' /etc/apache2/sites-available/000-default.conf \
-    && sed -i 's/\/var\/www\/html/\/var\/www\/html\n        AllowOverride All/' /etc/apache2/sites-available/000-default.conf
+COPY ./ /var/www/html
 
-# Expose the port your Apache server runs on
-EXPOSE 8081
+# Expose port 80 for web traffic
+EXPOSE 3000
 
-# The CMD instruction provides default execution behavior for the container
-CMD ["apache2-foreground"]
+RUN service apache2 restart
+
+# Start Apache in the foreground
+CMD ["apache2", "-D", "FOREGROUND"]
+
